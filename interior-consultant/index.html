@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interior consultant</title>
+  <link rel="stylesheet" href="./style/CSS/style.css">
+</head>
+<body>
+  <header>
+    <input id="check" class="check" type="checkbox" />
+    <span id="logo">This Interior</span>
+    <div class="ham-icon-container">
+      <div class="ham-icon"></div>
+    </div>
+    <nav class="ham-list">
+      <a href="#" class="selected-page">Home</a>
+      <a href="#">Collection</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="information">
+      <h2>Modern interior</h2>
+      <p>A full-Service residential & commercial interior design and staging company offering professional organizing & eco-services.</p>
+      <span>Read more →</span>
+    </div>
+    <div class="design">
+      <img src="./photo1.png" alt="" id="big-picture">
+      <div class="card">
+        <div class="card-header">
+          <img src="./photo2.png" alt="Aliza picture">
+          <div class="card-header-content">
+            <p>Aliza Webber</p>
+            <span>Interior Designer</span>
+          </div>
+        </div>
+        <h1>Designed in 2020 by Aliza Webber</h1>
+      </div>
+    </div>
+  </main>
+
+<script>
+
+const checkbox = document.getElementById('check')
+
+checkbox.addEventListener('change', (event) => {
+  if (event.currentTarget.checked) {
+    document.body.style.overflow = "hidden"
+  } else {
+    document.body.style.overflow = "auto"
+  }
+})
+
+</script>
+
+</body>
+</html>
