@@ -6,38 +6,33 @@
    Solution for a challenge from  <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>.
 </div>
 
-<div align="center">
-  <h3>
-    <a href="https://www.figma.com/file/F8d1qJsorEdY47N74HLxQ4/team-page-challenge">
-      Figma
-    </a>
-    <span> | </span>
-    <a href="https://github.com/yPerrot/devChallenge_My-Team-Page.git">
-      Solution
-    </a>
-    <span> | </span>
-    <a href="https://devchallenges.io/challenges/hhmesazsqgKXrTkYkt0U">
-      Challenge
-    </a>
-  </h3>
-</div>
+<!-- TABLE OF CONTENTS -->
+
+## Table of Contents
+
+- [Overview](#overview)
+  - [Built With](#built-with)
+- [Features](#features)
+- [Acknowledgements](#acknowledgements)
+
+<!-- OVERVIEW -->
+
+## Overview
+
+![Desktop](./Desktop.png)
+
+### Built With
+
+<!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
+
+- HTML
+- CSS
 
 ## Features
 
 <!-- List the features of your application or follow the template. Don't share the figma file here :) -->
 
 This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/hhmesazsqgKXrTkYkt0U) was to build an application to complete the given user stories.
-
-## Result
-
-Here is my production.
-
-### PC
-![PC](./PC.png)
-
-### Mobile
-
-![Mobile](./Mobile.png)
 
 ## Acknowledgements
 
