@@ -1,1 +1,89 @@
-$myvar: #fff
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,700;1,500&display=swap')
+
+$light-grey: #BDBDBD
+$grey: #4F4F4F
+$dark-grey: #333333
+$orange: #F2994A
+
+*
+    box-sizing: border-box
+
+body
+    margin: 0
+    padding: 0
+    min-width: 100vw
+    min-height: 100vh
+
+    padding: 0 0.75rem
+
+h1
+    font-family: 'Playfair Display', serif
+    font-weight: 700
+    font-size: 1.5rem
+
+.header__content
+    display: flex
+    align-items: flex-start
+    p
+        font-family: 'Montserrat', sans-serif
+        font-weight: 500
+        font-style: italic
+        font-size: 0.75rem
+        color: $grey
+
+        margin: 0 0.5rem
+
+    object
+        margin-top: 4px
+
+img
+    width: 100%
+    margin: 1rem 0
+
+// ** Main **
+
+aside
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    grid-template-rows: 1fr 1fr
+
+.aside__elem
+    display: flex
+    align-items: center
+
+    font-family: 'Montserrat', sans-serif
+
+    svg
+        width: 17px
+
+    div > p 
+        margin: 0 0 0 5px
+
+    .elem__title
+        font-weight: 700
+        font-size: 0.5rem
+        line-height: 0.625rem
+
+    .elem__content
+        font-weight: 500
+        font-size: 0.625rem
+        line-height: 0.75rem
+
+.elem__main
+    svg
+        fill: $orange
+    .elem__content
+        color: $orange
+    
+
+.elem__sub
+    grid-row: 2
+    svg
+        fill: $grey
+    .elem__content
+        color: $dark-grey
+
+.elem__title
+    color: $light-grey
+    
