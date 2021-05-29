@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap')
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,700;1,500&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap')
 
 $light-grey: #BDBDBD
 $grey: #4F4F4F
@@ -21,6 +21,17 @@ h1
     font-family: 'Playfair Display', serif
     font-weight: 700
     font-size: 1.5rem
+
+h2
+    font-family: 'Playfair Display', serif
+    font-weight: 700
+    font-size: 1.125rem
+
+h3
+    font-family: 'Playfair Display', serif
+    font-weight: 400
+    font-style: italic
+    font-size: 1rem
 
 .header__content
     display: flex
@@ -87,3 +98,33 @@ aside
 .elem__title
     color: $light-grey
     
+// ** Ingredients **
+
+.ingredient
+    color: $dark-grey
+    &__item
+        display: flex
+        align-items: start
+        &__box
+            content: ""
+            width: 21px
+            height: 21px
+            border: 1px solid #828282
+            flex-shrink: 0
+            border-radius: 4px
+
+            margin-right: 0.5rem
+        p
+            margin: 0
+            font-family: 'Montserrat', sans-serif
+            line-height: 1.5rem
+            font-size: 0.875rem
+            font-weight: 400
+
+            i
+                font-weight: 500
+
+
+    
+    &__item + &__item
+        margin-top: 1rem

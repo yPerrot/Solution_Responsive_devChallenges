@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,700;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -17,6 +17,19 @@ h1 {
   font-family: 'Playfair Display', serif;
   font-weight: 700;
   font-size: 1.5rem;
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+
+h3 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1rem;
 }
 
 .header__content {
@@ -108,5 +121,45 @@ aside {
 
 .elem__title {
   color: #BDBDBD;
+}
+
+.ingredient {
+  color: #333333;
+}
+
+.ingredient__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+.ingredient__item__box {
+  content: "";
+  width: 21px;
+  height: 21px;
+  border: 1px solid #828282;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  border-radius: 4px;
+  margin-right: 0.5rem;
+}
+
+.ingredient__item p {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.5rem;
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+.ingredient__item p i {
+  font-weight: 500;
+}
+
+.ingredient__item + .ingredient__item {
+  margin-top: 1rem;
 }
 /*# sourceMappingURL=style.css.map */
