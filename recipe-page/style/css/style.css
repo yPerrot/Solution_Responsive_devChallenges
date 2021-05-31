@@ -10,12 +10,12 @@ body {
   width: 100vw;
   max-width: 100%;
   min-height: 100vh;
-  padding: 0 0.75rem 3rem 0.75rem;
+  padding: 0 0.75rem;
 }
 
 @media screen and (min-width: 768px) {
   body {
-    padding: 0 15vw 3rem 15vw;
+    padding: 0 15vw;
   }
 }
 
@@ -309,5 +309,19 @@ aside {
 
 .instruction__item + .instruction__item {
   margin-top: 1rem;
+}
+
+.source {
+  margin: 3rem 0;
+  color: #BDBDBD;
+  font-style: italic;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.75rem;
+}
+
+@media screen and (min-width: 768px) {
+  .source {
+    font-size: 1rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
