@@ -7,16 +7,28 @@
 
 body {
   margin: 0;
-  padding: 0;
-  min-width: 100vw;
+  width: 100vw;
+  max-width: 100%;
   min-height: 100vh;
   padding: 0 0.75rem;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    padding: 0 15vw 3rem 15vw;
+  }
 }
 
 h1 {
   font-family: 'Playfair Display', serif;
   font-weight: 700;
   font-size: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 3rem;
+  }
 }
 
 h2 {
@@ -26,11 +38,23 @@ h2 {
   font-size: 1.125rem;
 }
 
+@media screen and (min-width: 768px) {
+  h2 {
+    font-size: 2rem;
+  }
+}
+
 h3 {
   font-family: 'Playfair Display', serif;
   font-weight: 400;
   font-style: italic;
   font-size: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  h3 {
+    font-size: 1.125rem;
+  }
 }
 
 .header__content {
@@ -51,6 +75,13 @@ h3 {
   margin: 0 0.5rem;
 }
 
+@media screen and (min-width: 768px) {
+  .header__content p {
+    max-width: 50%;
+    font-size: 0.875rem;
+  }
+}
+
 .header__content object {
   margin-top: 4px;
 }
@@ -67,6 +98,22 @@ aside {
       grid-template-columns: repeat(3, 1fr);
   -ms-grid-rows: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
+  row-gap: 2.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  aside {
+    position: absolute;
+    right: 15vw;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: (1fr)[4];
+        grid-template-rows: repeat(4, 1fr);
+    padding: 3rem;
+    border-radius: 0.75rem;
+    -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  }
 }
 
 .aside__elem {
@@ -83,20 +130,45 @@ aside {
   width: 17px;
 }
 
+@media screen and (min-width: 768px) {
+  .aside__elem svg {
+    width: 34px;
+  }
+}
+
 .aside__elem div > p {
   margin: 0 0 0 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .aside__elem div > p {
+    margin: 0 0 0 10px;
+  }
 }
 
 .aside__elem .elem__title {
   font-weight: 700;
   font-size: 0.5rem;
   line-height: 0.625rem;
+  margin-bottom: 0.25rem;
+}
+
+@media screen and (min-width: 768px) {
+  .aside__elem .elem__title {
+    font-size: 0.625rem;
+  }
 }
 
 .aside__elem .elem__content {
   font-weight: 500;
   font-size: 0.625rem;
   line-height: 0.75rem;
+}
+
+@media screen and (min-width: 768px) {
+  .aside__elem .elem__content {
+    font-size: 0.875rem;
+  }
 }
 
 .elem__main svg {
@@ -110,6 +182,12 @@ aside {
 .elem__sub {
   -ms-grid-row: 2;
   grid-row: 2;
+}
+
+@media screen and (min-width: 768px) {
+  .elem__sub {
+    grid-row: auto;
+  }
 }
 
 .elem__sub svg {
@@ -158,6 +236,12 @@ aside {
 
 .ingredient__item p i {
   font-weight: 500;
+}
+
+@media screen and (min-width: 768px) {
+  .ingredient__item p {
+    font-size: 1rem;
+  }
 }
 
 .ingredient__item + .ingredient__item {
