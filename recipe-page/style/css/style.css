@@ -10,7 +10,7 @@ body {
   width: 100vw;
   max-width: 100%;
   min-height: 100vh;
-  padding: 0 0.75rem;
+  padding: 0 0.75rem 3rem 0.75rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -36,11 +36,12 @@ h2 {
   font-family: 'Playfair Display', serif;
   font-weight: 700;
   font-size: 1.125rem;
+  margin-top: 0;
 }
 
 @media screen and (min-width: 768px) {
   h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -91,6 +92,21 @@ img {
   margin: 1rem 0;
 }
 
+@media screen and (min-width: 768px) {
+  main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
 aside {
   display: -ms-grid;
   display: grid;
@@ -98,13 +114,12 @@ aside {
       grid-template-columns: repeat(3, 1fr);
   -ms-grid-rows: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
-  row-gap: 2.5rem;
+  row-gap: 1.25rem;
+  margin-bottom: 1.5rem;
 }
 
 @media screen and (min-width: 768px) {
   aside {
-    position: absolute;
-    right: 15vw;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     -ms-grid-rows: (1fr)[4];
@@ -113,6 +128,8 @@ aside {
     border-radius: 0.75rem;
     -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
             box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    row-gap: 2.5rem;
+    margin-left: 2rem;
   }
 }
 
@@ -204,6 +221,7 @@ aside {
 
 .ingredient {
   color: #333333;
+  margin-bottom: 1rem;
 }
 
 .ingredient__item {

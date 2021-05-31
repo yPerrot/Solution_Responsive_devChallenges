@@ -18,7 +18,7 @@ body
     min-height: 100vh
 
     
-    padding: 0 0.75rem
+    padding: 0 0.75rem 3rem 0.75rem
 
     @media screen and (min-width: $desktop-screen-size)
         padding: 0 15vw 3rem 15vw
@@ -35,8 +35,10 @@ h2
     font-family: 'Playfair Display', serif
     font-weight: 700
     font-size: 1.125rem
+
+    margin-top: 0
     @media screen and (min-width: $desktop-screen-size)
-        font-size: 2rem
+        font-size: 1.5rem
     
 
 h3
@@ -71,17 +73,21 @@ img
 
 // ** Main **
 
+main 
+    @media screen and (min-width: $desktop-screen-size)
+        display: flex
+        flex-direction: row-reverse
+        align-items: flex-start
+
 aside
     display: grid
     grid-template-columns: repeat(3, 1fr)
     grid-template-rows: 1fr 1fr
     
-    row-gap: 2.5rem
+    row-gap: 1.25rem
+    margin-bottom: 1.5rem
 
     @media screen and (min-width: $desktop-screen-size)
-        position: absolute
-        right: 15vw
-
         grid-template-columns: 1fr
         grid-template-rows: repeat( 4, 1fr)
 
@@ -89,6 +95,9 @@ aside
 
         border-radius: 0.75rem
         box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1)
+        row-gap: 2.5rem
+
+        margin-left: 2rem
 
 
 .aside__elem
@@ -146,6 +155,7 @@ aside
 
 .ingredient
     color: $dark-grey
+    margin-bottom: 1rem
     &__item
         display: flex
         align-items: start
