@@ -20,7 +20,7 @@
 ### Built With
 
  - HTML
- - CSS
+ - SASS
 
 ## Features
 
@@ -28,6 +28,5 @@ This application/site was created as a submission to a [DevChallenges](https://d
 
 ## Acknowledgements
 
-- [Steps to replicate a design with only HTML and CSS](https://devchallenges-blogs.web.app/how-to-replicate-design/)
-- [Node.js](https://nodejs.org/)
-- [Marked - a markdown parser](https://github.com/chjj/marked)
+- [Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+- [Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
