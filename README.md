@@ -16,10 +16,10 @@ Done:
  - [404 Not Found](https://yperrot.github.io/Solution_Responsive_devChallenges/404-not-found/)
  - [My team page](https://yperrot.github.io/Solution_Responsive_devChallenges/my-team-page/)
  - [Interior Consultant](https://yperrot.github.io/Solution_Responsive_devChallenges/interior-consultant/)
+ - [Recipe page](https://yperrot.github.io/Solution_Responsive_devChallenges/recipe-page/)
 
 
 To-Do:
- - Recipe page
  - My Gallery
  - Checkout Page
  - Edie homepage
@@ -32,4 +32,5 @@ But here is the technologies actually used :
  - HTML
  - CSS
  - SCSS
+ - SASS
  - JavaSript
