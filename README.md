@@ -17,10 +17,10 @@ Done:
  - [My team page](https://yperrot.github.io/Solution_Responsive_devChallenges/my-team-page/)
  - [Interior Consultant](https://yperrot.github.io/Solution_Responsive_devChallenges/interior-consultant/)
  - [Recipe page](https://yperrot.github.io/Solution_Responsive_devChallenges/recipe-page/)
+ - [My Gallery](https://yperrot.github.io/Solution_Responsive_devChallenges/my-gallery/)
 
 
 To-Do:
- - My Gallery
  - Checkout Page
  - Edie homepage
  - Portfolio
