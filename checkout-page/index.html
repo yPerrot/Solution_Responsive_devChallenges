@@ -1,95 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1,
-  maximum-scale=5"
-    />
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout Page</title>
+  <link rel="stylesheet" href="style/css/style.css">
+  <link rel="shortcut icon" href="images/devchallenges.png" type="image/png">
+</head>
+<body>
 
-    <link rel="icon" href="devchallenges.png" />
+  <h1>Checkout</h1>
+  
+  <main>
 
-    <link
-      rel="shortcut icon"
-      type="image/x-icon"
-      href="https://devchallenges.io/"
-    />
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
-
-    <title>Devchallenges</title>
-
-    <style>
-      body {
-        font-family: "Poppins", sans-serif;
-      }
-
-      ul {
-        padding-left: 24px;
-      }
-
-      li {
-        margin-bottom: 8px;
-      }
-
-      .welcome {
-        max-width: 800px;
-        margin: 0 auto;
-      }
-
-      .welcome-text {
-        margin-top: 30vh;
-        font-weight: 500;
-      }
-
-      .welcome-text p {
-        font-size: 1rem;
-        font-weight: 400;
-      }
-
-      .welcome-text h1 {
-        font-size: 1.5rem;
-      }
-
-      .welcome-text a {
-        color: #f7542e;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="welcome">
-      <div class="welcome-text">
-        <h1>
-          Welcome to
-          <a href="https://devchallenges.io/" target="_blank"
-            >devchallenges.io</a
-          >
-        </h1>
-
-        <p>
-          If you have any questions, don't hesitate to ask on Discord. Here are
-          7 general steps to complete the challenge:
-        </p>
+    <aside class="basket">
+  
+      <div class="basket__card">
+        <img src="images/photo1.png" alt="bag">
+        <div class="basket__card__content">
+          <h3>Vintage Backbag</h3>
+          <p class="price">$54.99<span class="old_price">$94.99</span></p>
+          <div class="basket__card__content__quantity">
+            <button onclick="decrease(1)">-</button>
+            <p id="quantity_1">1</p>
+            <button onclick="increase(1)">+</button>
+          </div>
+        </div>
       </div>
+  
+      <div class="basket__card">
+        <img src="images/photo2.png" alt="bag">
+        <div class="basket__card__content">
+          <h3>Levi Shoes</h3>
+          <p class="price">$74.99<span class="old_price">$124.99</span></p>
+          <div class="basket__card__content__quantity">
+            <button onclick="decrease(1)">-</button>
+            <p id="quantity_1">1</p>
+            <button onclick="increase(1)">+</button>
+          </div>
+        </div>
+      </div>
+  
+      <div class="separator"></div>
+  
+      <div class="basket__price">
+        <span class="basket__price__label">Shipping</span>
+        <span class="basket__price__price">$19</span>
+      </div>
+  
+      <div class="separator"></div>
+      
+      <div class="basket__price">
+        <span class="basket__price__label">Total</span>
+        <span class="basket__price__price">$148.98</span>
+      </div>
+      
+      
+    </aside>
+    
+    <article>
 
-      <ul>
-        <li><b>Step 1:</b> Create a new repository on github</li>
-        <li><b>Step 2:</b> Copy resources, README.md to your repository</li>
-        <li>
-          <b>Step 3:</b> Login to Figma to checkout font, color, spacing,..
-        </li>
-        <li><b>Step 4:</b> Complete all user stories</li>
-        <li><b>Step 5:</b> Update README.md</li>
-        <li><b>Step 6:</b> Deploy your app and submit your solution</li>
-        <li>
-          <b>Step 7:</b> Share your solution on Discord, Twitter and other
-          platforms to ask for feedback
-        </li>
-      </ul>
-    </div>
-  </body>
+    </article>
+
+  </main>
+  <script>
+function increase(id) {
+  const e = document.getElementById("quantity_"+id);
+  let val = e.textContent;
+  e.textContent = ++val;
+}
+
+function decrease(id) {
+  const e = document.getElementById("quantity_"+id);
+  let val = parseInt(e.textContent);
+  if (val > 0) e.textContent = --val;
+}
+
+function validat() {
+
+}
+
+  </script>
+</body>
 </html>
