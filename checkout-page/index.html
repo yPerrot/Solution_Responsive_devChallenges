@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Checkout Page</title>
   <link rel="stylesheet" href="style/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
   <link rel="shortcut icon" href="images/devchallenges.png" type="image/png">
 </head>
 <body>
@@ -21,11 +22,17 @@
         <div class="basket__card__content">
           <h3>Vintage Backbag</h3>
           <p class="price">$54.99<span class="old_price">$94.99</span></p>
+
           <div class="basket__card__content__quantity">
-            <button onclick="decrease(1)">-</button>
+            <button onclick="decrease(1)">
+              <i class="fas fa-minus"></i>
+            </button>
             <p id="quantity_1">1</p>
-            <button onclick="increase(1)">+</button>
+            <button onclick="increase(1)">
+              <i class="fas fa-plus"></i>
+            </button>
           </div>
+
         </div>
       </div>
   
@@ -34,11 +41,17 @@
         <div class="basket__card__content">
           <h3>Levi Shoes</h3>
           <p class="price">$74.99<span class="old_price">$124.99</span></p>
+
           <div class="basket__card__content__quantity">
-            <button onclick="decrease(1)">-</button>
-            <p id="quantity_1">1</p>
-            <button onclick="increase(1)">+</button>
+            <button onclick="decrease(2)">
+              <i class="fas fa-minus"></i>
+            </button>
+            <p id="quantity_2">1</p>
+            <button onclick="increase(2)">
+              <i class="fas fa-plus"></i>
+            </button>
           </div>
+
         </div>
       </div>
   
