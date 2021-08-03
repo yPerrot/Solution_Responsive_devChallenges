@@ -74,7 +74,98 @@
     
     <article>
 
+      <form onsubmit="return validate()">
+
+        <section>
+          <h2>Contact infomation</h2>
+
+          <div class="entry">
+            <label for="email">E-mail</label>
+            <div class="entry__input">
+              <i class="fas fa-envelope"></i>
+              <input type="text" name="email" id="email" placeholder="Enter your email..." required>
+            </div>
+          </div>
+          
+          <div class="entry">
+            <label for="phone">Phone</label>
+            <div class="entry__input">
+              <i class="fas fa-phone-alt"></i>
+              <input type="tel" name="phone" id="phone" placeholder="Enter your phone..." required>
+            </div>
+          </div>
+
+        </section>
+
+
+        <section>
+          <h2>Shipping address</h2>
+
+          <div class="entry">
+            <label for="name">Full name</label>
+            <div class="entry__input">
+              <i class="fas fa-envelope"></i>
+              <input type="text" name="name" id="name" placeholder="Your full name..." required>
+            </div>
+          </div>
+          
+          <div class="entry">
+            <label for="address">Address</label>
+            <div class="entry__input">
+              <i class="fas fa-home"></i>
+              <input type="text" name="address" id="address" placeholder="Your address..." required>
+            </div>
+          </div>
+          
+          <div class="entry">
+            <label for="city">City</label>
+            <div class="entry__input">
+              <i class="fas fa-city"></i>
+              <input type="text" name="city" id="city" placeholder="Your city..." required>
+            </div>
+          </div>
+          
+          <div class="entry__small">
+            <label for="country">Country</label>
+            <div class="entry__input">
+              <i class="fas fa-city"></i>
+              <select id="country" name="country">
+                <option disabled selected>Your country...</option>
+                <option>France</option>
+                <option>Germany</option>
+                <option>United Kingdom</option>
+              </select>
+
+            </div>
+          </div>
+          
+          <div class="entry__small">
+            <label for="postal-code">Postal code</label>
+            <div class="entry__input">
+              <i class="fas fa-mail-bulk"></i>
+              <input type="text" name="postal-code" id="postal-code" placeholder="Your postal code..." required>
+            </div>
+          </div>
+          
+          
+        </section>
+
+        <div class="entry">
+          <input type="checkbox" id="information" name="information">
+          <label for="information">Save this information for next time</label>
+        </div>
+        
+        <input class="submit_button" type="submit" value="Continue">
+        <!-- <button class="submit_button">Continue</button> -->
+      </form>
+
     </article>
+
+    <footer>
+      <p>
+        created by <a href="https://devchallenges.io/portfolio/yPerrot">yPerrot</a> - devChallenges.io
+      </p>
+    </footer>
 
   </main>
   <script>
@@ -90,8 +181,9 @@ function decrease(id) {
   if (val > 0) e.textContent = --val;
 }
 
-function validat() {
-
+function validate() {
+  alert("Ok");
+  return false;
 }
 
   </script>
