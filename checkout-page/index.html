@@ -129,8 +129,8 @@
             <label for="country">Country</label>
             <div class="entry__input">
               <i class="fas fa-city"></i>
-              <select id="country" name="country">
-                <option disabled selected>Your country...</option>
+              <select id="country" name="country" required>
+                <option value="" disabled selected>Your country...</option>
                 <option>France</option>
                 <option>Germany</option>
                 <option>United Kingdom</option>
@@ -150,7 +150,7 @@
           
         </section>
 
-        <div class="entry">
+        <div class="entry entry__save">
           <input type="checkbox" id="information" name="information">
           <label for="information">Save this information for next time</label>
         </div>
