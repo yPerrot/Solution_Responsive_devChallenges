@@ -7,19 +7,44 @@
   font-family: 'Montserrat', sans-serif;
 }
 
-body {
-  padding: 0.75rem;
-}
-
 button {
   cursor: pointer;
+}
+
+body {
+  padding: 0.75rem;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    padding: 4rem 15vw 1.5rem 15vw;
+  }
+}
+
+main {
+  margin-bottom: auto;
 }
 
 h1 {
   font-weight: 600;
   font-size: 1.5rem;
   color: #4E5150;
-  margin: 1rem 0;
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+  h1 {
+    margin-bottom: 3rem;
+    font-size: 2.25rem;
+  }
 }
 
 .basket {
@@ -38,6 +63,15 @@ h1 {
   padding: 7.5%;
 }
 
+@media screen and (min-width: 1024px) {
+  .basket {
+    position: absolute;
+    margin-left: 45vw;
+    padding: 1.5rem;
+    margin-right: 15vw;
+  }
+}
+
 .basket__card {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -51,6 +85,7 @@ h1 {
 
 .basket__card img {
   width: 30%;
+  min-width: 100px;
   border-radius: 13px;
   margin-right: 1rem;
 }
@@ -72,6 +107,12 @@ h1 {
   margin-bottom: 0.5rem;
 }
 
+@media screen and (min-width: 1024px) {
+  .basket__card__content h3 {
+    font-size: 1rem;
+  }
+}
+
 .basket__card__content .price {
   font-weight: 600;
   font-size: 0.875rem;
@@ -79,11 +120,23 @@ h1 {
   margin-bottom: auto;
 }
 
+@media screen and (min-width: 1024px) {
+  .basket__card__content .price {
+    font-size: 1rem;
+  }
+}
+
 .basket__card__content .old_price {
   font-size: 0.625rem;
   color: #4E5150;
   margin-left: 1rem;
   text-decoration: line-through;
+}
+
+@media screen and (min-width: 1024px) {
+  .basket__card__content .old_price {
+    font-size: 0.75rem;
+  }
 }
 
 .basket__card__content__quantity {
@@ -136,6 +189,13 @@ h1 {
           justify-content: space-between;
   font-weight: 600;
   color: #333333;
+  font-size: 0.875rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .basket__price__label {
+    font-size: 1.125rem;
+  }
 }
 
 .basket__card + .separator {
@@ -146,10 +206,22 @@ h1 {
   margin-top: 1rem;
 }
 
+@media screen and (min-width: 1024px) {
+  article {
+    width: 35vw;
+  }
+}
+
 .entry__input {
   position: relative;
   color: #aaa;
   font-size: 16px;
+}
+
+@media screen and (min-width: 1024px) {
+  .entry__input {
+    font-size: 20px;
+  }
 }
 
 .entry__input input, .entry__input select {
@@ -161,10 +233,24 @@ h1 {
   padding-left: 40px;
 }
 
+@media screen and (min-width: 1024px) {
+  .entry__input input, .entry__input select {
+    height: 56px;
+    padding-left: 50px;
+  }
+}
+
 .entry__input i {
   position: absolute;
   top: 12px;
   left: 12px;
+}
+
+@media screen and (min-width: 1024px) {
+  .entry__input i {
+    top: 18px;
+    left: 18px;
+  }
 }
 
 .entry__input select option[disabled] {
@@ -192,6 +278,12 @@ section .entry {
   grid-column: 1 / 3;
 }
 
+@media screen and (min-width: 1024px) {
+  section .entry {
+    margin-top: 0.75rem;
+  }
+}
+
 section .entry__small {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
@@ -208,6 +300,12 @@ section h2 {
   font-weight: 600;
   font-size: 0.875rem;
   color: #333333;
+}
+
+@media screen and (min-width: 1024px) {
+  section h2 {
+    font-size: 1.125rem;
+  }
 }
 
 section .entry > label {
@@ -231,8 +329,13 @@ section .entry__input {
   color: #4F4F4F;
 }
 
+@media screen and (min-width: 1024px) {
+  .entry__save label {
+    font-size: 12px;
+  }
+}
+
 .submit_button {
-  width: 50%;
   float: right;
   background: #F2994A;
   border-radius: 12px;
@@ -242,6 +345,14 @@ section .entry__input {
   font-size: 1rem;
   height: 3.375rem;
   margin-bottom: 2rem;
+  padding: 1rem 2.5rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .submit_button {
+    width: 50%;
+    padding: 0;
+  }
 }
 
 footer {
@@ -252,7 +363,6 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 10vh;
 }
 
 footer p {
