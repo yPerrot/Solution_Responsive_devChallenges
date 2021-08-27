@@ -18,10 +18,9 @@ Done:
  - [Interior Consultant](https://yperrot.github.io/Solution_Responsive_devChallenges/interior-consultant/)
  - [Recipe page](https://yperrot.github.io/Solution_Responsive_devChallenges/recipe-page/)
  - [My Gallery](https://yperrot.github.io/Solution_Responsive_devChallenges/my-gallery/)
-
+ - [Checkout Page](https://yperrot.github.io/Solution_Responsive_devChallenges/checkout-page/)
 
 To-Do:
- - Checkout Page
  - Edie homepage
  - Portfolio
 

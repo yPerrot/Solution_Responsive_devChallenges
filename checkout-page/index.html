@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout Page</title>
+  <link rel="stylesheet" href="style/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  <link rel="shortcut icon" href="images/devchallenges.png" type="image/png">
+</head>
+<body>
+
+  
+  <main>
+    
+    <h1>Checkout</h1>
+
+    <aside class="basket">
+  
+      <div class="basket__card">
+        <img src="images/photo1.png" alt="bag">
+        <div class="basket__card__content">
+          <h3>Vintage Backbag</h3>
+          <p class="price">$54.99<span class="old_price">$94.99</span></p>
+
+          <div class="basket__card__content__quantity">
+            <button onclick="decrease(1)">
+              <i class="fas fa-minus"></i>
+            </button>
+            <p id="quantity_1">1</p>
+            <button onclick="increase(1)">
+              <i class="fas fa-plus"></i>
+            </button>
+          </div>
+
+        </div>
+      </div>
+  
+      <div class="basket__card">
+        <img src="images/photo2.png" alt="bag">
+        <div class="basket__card__content">
+          <h3>Levi Shoes</h3>
+          <p class="price">$74.99<span class="old_price">$124.99</span></p>
+
+          <div class="basket__card__content__quantity">
+            <button onclick="decrease(2)">
+              <i class="fas fa-minus"></i>
+            </button>
+            <p id="quantity_2">1</p>
+            <button onclick="increase(2)">
+              <i class="fas fa-plus"></i>
+            </button>
+          </div>
+
+        </div>
+      </div>
+  
+      <div class="separator"></div>
+  
+      <div class="basket__price">
+        <span class="basket__price__label">Shipping</span>
+        <span class="basket__price__price">$19</span>
+      </div>
+  
+      <div class="separator"></div>
+      
+      <div class="basket__price">
+        <span class="basket__price__label">Total</span>
+        <span class="basket__price__price" id="total">$148.98</span>
+      </div>
+      
+      
+    </aside>
+    
+    <article>
+
+      <form onsubmit="return validate()">
+
+        <section>
+          <h2>Contact infomation</h2>
+
+          <div class="entry">
+            <label for="email">E-mail</label>
+            <div class="entry__input">
+              <i class="fas fa-envelope"></i>
+              <input type="text" name="email" id="email" placeholder="Enter your email..." required>
+            </div>
+          </div>
+          
+          <div class="entry">
+            <label for="phone">Phone</label>
+            <div class="entry__input">
+              <i class="fas fa-phone-alt"></i>
+              <input type="tel" name="phone" id="phone" placeholder="Enter your phone..." required>
+            </div>
+          </div>
+
+        </section>
+
+
+        <section>
+          <h2>Shipping address</h2>
+
+          <div class="entry">
+            <label for="name">Full name</label>
+            <div class="entry__input">
+              <i class="fas fa-envelope"></i>
+              <input type="text" name="name" id="name" placeholder="Your full name..." required>
+            </div>
+          </div>
+          
+          <div class="entry">
+            <label for="address">Address</label>
+            <div class="entry__input">
+              <i class="fas fa-home"></i>
+              <input type="text" name="address" id="address" placeholder="Your address..." required>
+            </div>
+          </div>
+          
+          <div class="entry">
+            <label for="city">City</label>
+            <div class="entry__input">
+              <i class="fas fa-city"></i>
+              <input type="text" name="city" id="city" placeholder="Your city..." required>
+            </div>
+          </div>
+          
+          <div class="entry entry__small">
+            <label for="country">Country</label>
+            <div class="entry__input">
+              <i class="fas fa-city"></i>
+              <select id="country" name="country" required>
+                <option value="" disabled selected>Your country...</option>
+                <option>France</option>
+                <option>Germany</option>
+                <option>United Kingdom</option>
+              </select>
+
+            </div>
+          </div>
+          
+          <div class="entry entry__small">
+            <label for="postal-code">Postal code</label>
+            <div class="entry__input">
+              <i class="fas fa-mail-bulk"></i>
+              <input type="text" name="postal-code" id="postal-code" placeholder="Your postal code..." required>
+            </div>
+          </div>
+          
+          
+        </section>
+
+        <div class="entry entry__save">
+          <input type="checkbox" id="information" name="information">
+          <label for="information">Save this information for next time</label>
+        </div>
+        
+        <input class="submit_button" type="submit" value="Continue">
+        <!-- <button class="submit_button">Continue</button> -->
+      </form>
+
+    </article>
+    
+  </main>
+
+  <footer>
+    <p>
+      created by <a href="https://devchallenges.io/portfolio/yPerrot">yPerrot</a> - devChallenges.io
+    </p>
+  </footer>
+
+  <script>
+function increase(id) {
+  const e = document.getElementById("quantity_"+id);
+  let val = e.textContent;
+  e.textContent = ++val;
+  updatePrice();
+}
+
+function decrease(id) {
+  const e = document.getElementById("quantity_"+id);
+  let val = parseInt(e.textContent);
+  if (val > 0) e.textContent = --val;
+  updatePrice();
+}
+
+function updatePrice() {
+  const nbElem1 = document.getElementById("quantity_1").textContent;
+  const nbElem2 = document.getElementById("quantity_2").textContent;
+  const total = document.getElementById("total");
+  
+  total.textContent = nbElem1 == "0" && nbElem2 == "0" ? "$0.00" : "$" + (19 + nbElem1 * 54.99 + nbElem2 * 74.99).toFixed(2);
+}
+
+function validate() {
+  alert("Ok");
+  return false;
+}
+
+  </script>
+</body>
+</html>
