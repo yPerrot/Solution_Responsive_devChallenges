@@ -67,7 +67,7 @@
       
       <div class="basket__price">
         <span class="basket__price__label">Total</span>
-        <span class="basket__price__price">$148.98</span>
+        <span class="basket__price__price" id="total">$148.98</span>
       </div>
       
       
@@ -175,12 +175,22 @@ function increase(id) {
   const e = document.getElementById("quantity_"+id);
   let val = e.textContent;
   e.textContent = ++val;
+  updatePrice();
 }
 
 function decrease(id) {
   const e = document.getElementById("quantity_"+id);
   let val = parseInt(e.textContent);
   if (val > 0) e.textContent = --val;
+  updatePrice();
+}
+
+function updatePrice() {
+  const nbElem1 = document.getElementById("quantity_1").textContent;
+  const nbElem2 = document.getElementById("quantity_2").textContent;
+  const total = document.getElementById("total");
+  
+  total.textContent = nbElem1 == "0" && nbElem2 == "0" ? "$0.00" : "$" + (19 + nbElem1 * 54.99 + nbElem2 * 74.99).toFixed(2);
 }
 
 function validate() {
