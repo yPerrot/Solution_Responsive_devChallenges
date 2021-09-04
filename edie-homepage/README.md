@@ -82,6 +82,7 @@ $ npm start
 <!-- This section should list any articles or add-ons/plugins that helps you to complete the project. This is optional but it will help you in the future. For example -->
 
 - [Button iside inpute](https://stackoverflow.com/questions/15314407/how-to-add-button-inside-input)
+- [Smooth scroll](https://www.w3schools.com/howto/howto_css_smooth_scroll.asp#section2)
 
 ## Contact
 

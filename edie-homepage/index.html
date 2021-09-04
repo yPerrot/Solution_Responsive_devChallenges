@@ -5,27 +5,32 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="images/devchallenges.png" />
-  <title>Document</title>
+  <title>Edie Homepage</title>
+  <link rel="stylesheet" href="./style/CSS/style.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
 
   <header>
     <input id="check" class="check" type="checkbox" />
-    <span id="logo">Edie</span>
+    <span>Edie</span>
     <div class="ham-icon-container">
       <div class="ham-icon"></div>
     </div>
     <nav class="ham-list">
-      <a href="#">Home</a>
-      <a href="#">Services</a>
-      <a href="#">Our Works</a>
-      <a href="#">Clients</a>
-      <a href="#">Contact</a>
+      <a href="#home" onclick="hidePanel()">Home</a>
+      <a href="#services" onclick="hidePanel()">Services</a>
+      <a href="#our_works" onclick="hidePanel()">Our Works</a>
+      <a href="#clients" onclick="hidePanel()">Clients</a>
+      <a href="#contact" onclick="hidePanel()">Contact</a>
     </nav>
   </header>
 
   <!-- <span class="material-icons">face</span> -->
+
+  <main style="height: 80vh;">
+    <!-- TMP -->
+  </main>
 
   <footer>
 
@@ -67,6 +72,27 @@
       </p>
     </div>
   </footer>
+
+<script>
+
+const checkbox = document.getElementById('check')
+
+checkbox.addEventListener('change', (event) => {
+  if (event.currentTarget.checked) {
+    document.body.style.overflow = "hidden"
+  } else {
+    document.body.style.overflow = "auto"
+  }
+})
+
+function hidePanel() {
+  if(checkbox.checked) {
+    checkbox.checked = false
+    document.body.style.overflow = "auto"
+  } 
+}
+    
+</script>
 
 </body>
 </html>
