@@ -15,18 +15,12 @@
   --red: #EB5757;
   --green: #27AE60;
   --blue: #2D9CDB;
+  --dark-blue: #100E1D;
   scroll-behavior: smooth;
 }
 
 body {
-  padding: 1rem;
   font-family: 'Poppins', sans-serif;
-}
-
-@media screen and (min-width: 1024px) {
-  body {
-    padding: 2rem 3rem;
-  }
 }
 
 a {
@@ -44,6 +38,13 @@ header {
       -ms-flex-align: center;
           align-items: center;
   color: var(--gray-1);
+  padding: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    padding: 2rem 3rem;
+  }
 }
 
 header span {
@@ -190,5 +191,97 @@ header nav > a {
 /* #endregion */
 /* === Footer === */
 /* #region */
+footer {
+  width: 100%;
+  background-color: var(--dark-blue);
+  color: #ffffff;
+  padding: 2rem 2rem 1rem 2rem;
+}
+
+footer .footer__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .footer__links > * {
+  margin-bottom: 4rem;
+}
+
+footer .footer__links__internal ul {
+  list-style-type: none;
+  padding-left: 0;
+  font-size: 1.125rem;
+  line-height: 200%;
+}
+
+footer .footer__links__external p {
+  font-weight: 800;
+  font-size: 2.25rem;
+  color: var(--gray-6);
+}
+
+footer .footer__links__external img {
+  margin-right: 0.625rem;
+}
+
+footer .footer__links__contact p {
+  color: var(--gray-3);
+  font-size: 0.625rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+footer .footer__links__contact form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 0.25rem;
+  background-color: var(--gray-6);
+  border-radius: 12px;
+  height: 3rem;
+  width: 80%;
+  font-size: 0.875rem;
+}
+
+footer .footer__links__contact form input {
+  background-color: inherit;
+  border: none;
+  outline: none;
+  width: 70%;
+  height: 100%;
+  margin-left: 0.25rem;
+}
+
+footer .footer__links__contact form button {
+  margin-left: auto;
+  background-color: var(--blue);
+  color: var(--gray-6);
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  width: 25%;
+}
+
+footer .footer__signature {
+  text-align: center;
+  font-weight: 500;
+  font-size: 0.875rem;
+  margin-top: 5rem;
+}
+
+footer .footer__signature a {
+  text-decoration: underline;
+  font-weight: 700;
+}
+
 /* #endregion */
 /*# sourceMappingURL=style.css.map */

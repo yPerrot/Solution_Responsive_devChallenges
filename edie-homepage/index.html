@@ -58,8 +58,8 @@
 
       <div class="footer__links__contact">
         <p>Want us to contact you?</p>
-        <form action="">
-          <input type="text" placeholder="Email">
+        <form onsubmit="return sendMail();">
+          <input type="text" placeholder="Email" id="email">
           <button>Join</button>
         </form>
       </div>
@@ -90,6 +90,11 @@ function hidePanel() {
     checkbox.checked = false
     document.body.style.overflow = "auto"
   } 
+}
+
+function sendMail() {
+  document.getElementById("email").value = "";
+  return false;
 }
     
 </script>

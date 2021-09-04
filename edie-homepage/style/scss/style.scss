@@ -16,17 +16,13 @@
     --red: #EB5757;
     --green: #27AE60;
     --blue: #2D9CDB;
+    --dark-blue: #100E1D;
 
     scroll-behavior: smooth;
 }
 
 body {
-    padding: 1rem;
     font-family: 'Poppins', sans-serif;
-    
-    @media screen and (min-width:1024px) {
-        padding: 2rem 3rem;
-    }
 }
 
 a {
@@ -42,6 +38,12 @@ header {
     align-items: center;
 
     color: var(--gray-1);
+
+    padding: 1rem;
+
+    @media screen and (min-width:1024px) {
+        padding: 2rem 3rem;
+    }
     
     span {
         font-weight: 800;
@@ -178,5 +180,102 @@ header {
 
 /* === Footer === */
 /* #region */
+
+footer {
+    width: 100%;
+
+    background-color: var(--dark-blue);
+    color: #ffffff;
+
+    padding: 2rem 2rem 1rem 2rem;
+
+    .footer__links {
+        display: flex;
+        flex-direction: column;
+
+        & > * {
+            margin-bottom: 4rem;
+        }
+
+        &__internal {
+            ul {
+                list-style-type: none;
+                padding-left: 0;
+                font-size: 1.125rem;
+                line-height: 200%;
+            }
+        }
+
+        &__external {
+            p {
+                font-weight: 800;
+                font-size: 2.25rem;
+                color: var(--gray-6);
+            }
+
+            img {
+                margin-right: 0.625rem;
+            }
+        }
+
+        &__contact {
+
+            p {
+                color: var(--gray-3);
+                font-size: 0.625rem;
+                font-weight: 500;
+                margin-bottom: 0.5rem;
+            }
+
+            form {
+                display:flex;
+                flex-direction:row;
+                
+                padding: 0.25rem;
+                background-color: var(--gray-6);
+                border-radius: 12px;
+
+                height: 3rem;
+                width: 80%;
+
+                font-size: 0.875rem;
+
+                input {
+                    background-color: inherit;
+                    border: none;
+                    outline: none;
+
+                    width: 70%;
+                    height: 100%;
+                    margin-left: 0.25rem;
+                }
+
+                button {
+                    margin-left: auto;
+                    background-color: var(--blue);
+                    color: var(--gray-6);
+                    border-radius: 12px;
+                    border: none;
+                    cursor: pointer;
+
+                    width: 25%;
+                }
+            }
+        }
+    }
+
+    .footer__signature {
+        text-align: center;
+        font-weight: 500;
+        font-size: 0.875rem;
+
+        margin-top: 5rem;
+
+        & a {
+            text-decoration: underline;
+            font-weight: 700;
+        }
+    }
+}
 
 /* #endregion */
