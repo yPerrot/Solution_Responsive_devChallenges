@@ -189,12 +189,26 @@ footer {
 
     padding: 2rem 2rem 1rem 2rem;
 
+    @media screen and (min-width:1024px) {
+        padding: 0;
+        padding-top: 3rem;
+        padding-bottom: 1.5rem;
+    }
+
     .footer__links {
         display: flex;
         flex-direction: column;
 
+        @media screen and (min-width:1024px) {
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
         & > * {
             margin-bottom: 4rem;
+            @media screen and (min-width:1024px) {
+                margin-bottom: 0rem;
+            }
         }
 
         &__internal {
@@ -215,16 +229,26 @@ footer {
 
             img {
                 margin-right: 0.625rem;
+                cursor: pointer;
             }
         }
 
         &__contact {
+
+            @media screen and (min-width:1024px) {
+                min-width: 20vw;
+            }
 
             p {
                 color: var(--gray-3);
                 font-size: 0.625rem;
                 font-weight: 500;
                 margin-bottom: 0.5rem;
+
+                @media screen and (min-width:1024px) {
+                    color: var(--gray-6);
+                    font-size: 0.875rem;
+                }
             }
 
             form {
@@ -237,8 +261,15 @@ footer {
 
                 height: 3rem;
                 width: 80%;
+                max-width: 20rem;
 
                 font-size: 0.875rem;
+                
+                @media screen and (min-width:1024px) {
+                    height: 3.5rem;
+                    width: 100%;
+                    font-size: 1.125rem;
+                }
 
                 input {
                     background-color: inherit;
@@ -248,8 +279,10 @@ footer {
                     width: 70%;
                     height: 100%;
                     margin-left: 0.25rem;
-                }
 
+                    font-size: inherit;
+                }
+                
                 button {
                     margin-left: auto;
                     background-color: var(--blue);
@@ -257,8 +290,9 @@ footer {
                     border-radius: 12px;
                     border: none;
                     cursor: pointer;
-
+                    
                     width: 25%;
+                    font-size: inherit;
                 }
             }
         }

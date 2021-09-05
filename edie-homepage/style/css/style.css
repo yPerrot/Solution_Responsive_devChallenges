@@ -198,6 +198,14 @@ footer {
   padding: 2rem 2rem 1rem 2rem;
 }
 
+@media screen and (min-width: 1024px) {
+  footer {
+    padding: 0;
+    padding-top: 3rem;
+    padding-bottom: 1.5rem;
+  }
+}
+
 footer .footer__links {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -208,8 +216,25 @@ footer .footer__links {
           flex-direction: column;
 }
 
+@media screen and (min-width: 1024px) {
+  footer .footer__links {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
 footer .footer__links > * {
   margin-bottom: 4rem;
+}
+
+@media screen and (min-width: 1024px) {
+  footer .footer__links > * {
+    margin-bottom: 0rem;
+  }
 }
 
 footer .footer__links__internal ul {
@@ -227,6 +252,13 @@ footer .footer__links__external p {
 
 footer .footer__links__external img {
   margin-right: 0.625rem;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1024px) {
+  footer .footer__links__contact {
+    min-width: 20vw;
+  }
 }
 
 footer .footer__links__contact p {
@@ -234,6 +266,13 @@ footer .footer__links__contact p {
   font-size: 0.625rem;
   font-weight: 500;
   margin-bottom: 0.5rem;
+}
+
+@media screen and (min-width: 1024px) {
+  footer .footer__links__contact p {
+    color: var(--gray-6);
+    font-size: 0.875rem;
+  }
 }
 
 footer .footer__links__contact form {
@@ -249,7 +288,16 @@ footer .footer__links__contact form {
   border-radius: 12px;
   height: 3rem;
   width: 80%;
+  max-width: 20rem;
   font-size: 0.875rem;
+}
+
+@media screen and (min-width: 1024px) {
+  footer .footer__links__contact form {
+    height: 3.5rem;
+    width: 100%;
+    font-size: 1.125rem;
+  }
 }
 
 footer .footer__links__contact form input {
@@ -259,6 +307,7 @@ footer .footer__links__contact form input {
   width: 70%;
   height: 100%;
   margin-left: 0.25rem;
+  font-size: inherit;
 }
 
 footer .footer__links__contact form button {
@@ -269,6 +318,7 @@ footer .footer__links__contact form button {
   border: none;
   cursor: pointer;
   width: 25%;
+  font-size: inherit;
 }
 
 footer .footer__signature {
