@@ -30,6 +30,50 @@ a {
     text-decoration: none;
 }
 
+h2 {
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    color: var(--gray-1);
+}
+
+/* === Custom Input === */
+/* #region */
+form {
+    display:flex;
+    flex-direction:row;
+    
+    padding: 0.25rem;
+    background-color: var(--gray-6);
+    border-radius: 12px;
+
+    input {
+        background-color: inherit;
+        border: none;
+        outline: none;
+
+        width: 70%;
+        height: 100%;
+        margin-left: 0.25rem;
+
+        font-size: inherit;
+    }
+    
+    button {
+        margin-left: auto;
+        background-color: var(--blue);
+        color: var(--gray-6);
+        border-radius: 12px;
+        border: none;
+        cursor: pointer;
+        
+        width: 25%;
+        font-size: inherit;
+    }
+}
+/* #endregion */
+
+
 /* === Header === */
 /* #region */
 
@@ -178,6 +222,64 @@ header {
 
 /* #endregion */
 
+/* === Main === */
+/* #region */
+
+.presentation {
+
+    & > span, & > h2, & > div {
+        margin-left: 2.5rem;
+        max-width: 75vw;
+    }
+
+    span {
+        font-weight: 500;
+        font-size: 0.75rem;
+        color: var(--blue);
+    }
+
+    .card {
+        &__text {
+            font-size: 0.75rem;
+            max-width: 37.5rem;
+
+            margin: 2rem 0;
+        }
+
+        .form__header {
+            font-size: 0.625rem;
+            color: var(--gray-3);
+            margin-bottom: 0.5rem;
+        }
+
+        form {
+            height: 3rem;
+            width: 100%;
+            max-width: 20rem;
+        
+            font-size: 0.875rem;
+            
+            @media screen and (min-width:1024px) {
+                height: 3.5rem;
+                width: 100%;
+                font-size: 1.125rem;
+            }
+        }
+    }
+
+    img {
+        display: block;
+        margin: 1rem auto;
+        
+        width: 95vw;
+        border-radius: 1.125rem;
+    }
+}
+
+
+/* #endregion */
+
+
 /* === Footer === */
 /* #region */
 
@@ -252,17 +354,10 @@ footer {
             }
 
             form {
-                display:flex;
-                flex-direction:row;
-                
-                padding: 0.25rem;
-                background-color: var(--gray-6);
-                border-radius: 12px;
-
                 height: 3rem;
                 width: 80%;
                 max-width: 20rem;
-
+            
                 font-size: 0.875rem;
                 
                 @media screen and (min-width:1024px) {
@@ -270,31 +365,8 @@ footer {
                     width: 100%;
                     font-size: 1.125rem;
                 }
-
-                input {
-                    background-color: inherit;
-                    border: none;
-                    outline: none;
-
-                    width: 70%;
-                    height: 100%;
-                    margin-left: 0.25rem;
-
-                    font-size: inherit;
-                }
-                
-                button {
-                    margin-left: auto;
-                    background-color: var(--blue);
-                    color: var(--gray-6);
-                    border-radius: 12px;
-                    border: none;
-                    cursor: pointer;
-                    
-                    width: 25%;
-                    font-size: inherit;
-                }
             }
+
         }
     }
 

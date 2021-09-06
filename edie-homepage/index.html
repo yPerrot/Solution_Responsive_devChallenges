@@ -28,8 +28,27 @@
 
   <!-- <span class="material-icons">face</span> -->
 
-  <main style="height: 80vh;">
-    <!-- TMP -->
+  <main>
+    <section class="presentation">
+      <span>Unhappy with your website?</span>
+      <h2>We create beautiful and fast web services</h2>
+
+      <img src="images/heroImage.jpg" alt="">
+
+      <div class="card">
+        <h2>Story, emotion and purpose</h2>
+        <p class="card__text">We help transform your ideas into real world applications that will outperform your toughest competition and help you achieve your strategic goals in short period of time.</p>
+  
+        <p class="form__header">Want us to contact you?</p>
+        <form onsubmit="return sendMail();">
+          <input type="text" placeholder="Email" id="email">
+          <button>Join</button>
+        </form>
+      </div>
+
+    </section>
+
+    
   </main>
 
   <footer>
@@ -59,7 +78,7 @@
       <div class="footer__links__contact">
         <p>Want us to contact you?</p>
         <form onsubmit="return sendMail();">
-          <input type="text" placeholder="Email" id="email">
+          <input type="text" placeholder="Email" id="email_footer">
           <button>Join</button>
         </form>
       </div>
@@ -94,6 +113,7 @@ function hidePanel() {
 
 function sendMail() {
   document.getElementById("email").value = "";
+  document.getElementById("email_footer").value = "";
   return false;
 }
     
