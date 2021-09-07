@@ -42,6 +42,12 @@ h2 {
   }
 }
 
+h3 {
+  color: var(--gray-1);
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
 /* === Custom Input === */
 /* #region */
 form {
@@ -242,6 +248,10 @@ header nav > a {
 /* #endregion */
 /* === Main === */
 /* #region */
+.presentation {
+  margin-bottom: 6.25rem;
+}
+
 .presentation > span, .presentation > h2, .presentation > div {
   margin-left: 2.5rem;
   max-width: 75vw;
@@ -316,6 +326,85 @@ header nav > a {
   margin: 1rem auto;
   width: 95vw;
   border-radius: 1.125rem;
+}
+
+.offer h3 {
+  margin-left: 2.5rem;
+}
+
+.offer .offer__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.offer .offer__cards .offer__card {
+  margin-top: 3rem;
+  padding: 3rem 2rem 2.5rem 2rem;
+  width: 90vw;
+}
+
+.offer .offer__cards .offer__card .material-icons {
+  color: white;
+  font-size: 1.75rem;
+  padding: 1rem;
+  border-radius: 16px;
+  margin-bottom: 2.125rem;
+}
+
+.offer .offer__cards .offer__card__edit {
+  background-color: var(--blue);
+}
+
+.offer .offer__cards .offer__card__code {
+  background-color: var(--green);
+}
+
+.offer .offer__cards .offer__card__storage {
+  background-color: var(--red);
+}
+
+.offer .offer__cards .offer__card h4 {
+  color: var(--gray-1);
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.offer .offer__cards .offer__card p {
+  color: var(--gray-2);
+  margin-bottom: 2rem;
+}
+
+.offer .offer__cards .offer__card button {
+  border: none;
+  outline: none;
+  color: var(--gray-3);
+  background-color: var(--gray-5);
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 0.625rem 0.75rem;
+  border-radius: 12px;
+}
+
+.offer .offer__cards .offer__card:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0px 10px 30px rgba(51, 51, 51, 0.1);
+          box-shadow: 0px 10px 30px rgba(51, 51, 51, 0.1);
+  border-radius: 24px;
+}
+
+.offer .offer__cards .offer__card:hover button {
+  color: white;
+  background-color: var(--blue);
+  cursor: pointer;
 }
 
 /* #endregion */
