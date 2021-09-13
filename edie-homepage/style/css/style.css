@@ -54,6 +54,18 @@ h3 {
   }
 }
 
+h4 {
+  color: var(--gray-1);
+  font-weight: 500;
+  font-size: 1.125rem;
+}
+
+@media screen and (min-width: 1024px) {
+  h4 {
+    font-size: 1.5rem;
+  }
+}
+
 /* === Custom Input === */
 /* #region */
 form {
@@ -254,7 +266,7 @@ header nav > a {
 /* #endregion */
 /* === Main === */
 /* #region */
-#home {
+section {
   margin-bottom: 6.25rem;
 }
 
@@ -434,6 +446,105 @@ header nav > a {
   color: white;
   background-color: var(--blue);
   cursor: pointer;
+}
+
+#works {
+  position: relative;
+}
+
+@media screen and (min-width: 1024px) {
+  #works {
+    padding: 0 10vw;
+  }
+}
+
+#works h3 {
+  margin-left: 2.5rem;
+  margin-bottom: 3.5rem;
+}
+
+@media screen and (min-width: 1024px) {
+  #works h3 {
+    margin-left: 0;
+    margin-bottom: 5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #works .works__grid {
+    display: -ms-grid;
+    display: grid;
+    gap: 0 2em;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  #works .works__grid > div:nth-child(2n) {
+    position: relative;
+    top: -5rem;
+  }
+}
+
+#works .works__grid__card {
+  padding: 0 5vw;
+}
+
+@media screen and (min-width: 1024px) {
+  #works .works__grid__card {
+    padding: 0;
+  }
+}
+
+#works .works__grid__card img {
+  width: 100%;
+  border-radius: 24px;
+}
+
+#works .works__grid__card p {
+  color: var(--gray-3);
+  font-size: 0.75rem;
+  font-weight: 300;
+}
+
+@media screen and (min-width: 1024px) {
+  #works .works__grid__card p {
+    font-size: 0.875rem;
+  }
+}
+
+#works .works__grid .works__grid__card + .works__grid__card {
+  margin-top: 2rem;
+}
+
+#works .works__link {
+  margin-left: 5vw;
+  margin-top: 2rem;
+  color: var(--blue);
+}
+
+@media screen and (min-width: 1024px) {
+  #works .works__link {
+    margin: 0;
+    font-size: 1.5rem;
+    position: absolute;
+    right: 10vw;
+    bottom: 0;
+  }
+}
+
+#works .works__link a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#works .works__link a span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 0.5rem;
 }
 
 /* #endregion */

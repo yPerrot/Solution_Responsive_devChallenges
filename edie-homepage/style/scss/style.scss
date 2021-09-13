@@ -50,6 +50,15 @@ h3 {
     }
 }
 
+h4 {
+    color: var(--gray-1);
+    font-weight: 500;
+    font-size: 1.125rem;
+    @media screen and (min-width:1024px) {
+        font-size: 1.5rem;
+    }
+}
+
 /* === Custom Input === */
 /* #region */
 form {
@@ -238,9 +247,11 @@ header {
 /* === Main === */
 /* #region */
 
-#home {
-
+section {
     margin-bottom: 6.25rem;
+}
+
+#home {
 
     & > span, & > h2, & > div {
         margin-left: 2.5rem;
@@ -399,6 +410,92 @@ header {
                 }
             } 
             
+        }
+    }
+
+}
+
+#works {
+    
+    @media screen and (min-width:1024px) {
+        padding: 0 10vw;
+    }
+
+    h3 {
+        margin-left: 2.5rem;
+        margin-bottom: 3.5rem;
+        @media screen and (min-width:1024px) {
+            margin-left: 0;
+            margin-bottom: 5rem;
+        }
+    }
+
+    
+    .works__grid {
+
+        @media screen and (min-width:1024px) {
+            display: grid;
+            gap: 0 2em;
+            grid-template-columns: 1fr 1fr;
+
+            & > div:nth-child(2n) {
+                position: relative;
+                top: -5rem;
+            }
+        }
+
+        &__card {
+            padding: 0 5vw;
+
+            @media screen and (min-width:1024px) {
+                padding: 0;
+            }
+
+            img {
+                width: 100%;
+                border-radius: 24px;
+            }
+
+            p {
+                color: var(--gray-3);
+                font-size: 0.75rem;
+                font-weight: 300;
+                @media screen and (min-width:1024px) {
+                    font-size: 0.875rem;
+                }
+            }
+            
+        }
+
+        .works__grid__card + .works__grid__card {
+            margin-top: 2rem;
+        }
+    }
+
+    position: relative;
+
+    .works__link {
+        margin-left: 5vw;
+        margin-top: 2rem;
+        color: var(--blue);
+
+        
+        @media screen and (min-width:1024px) {
+            margin: 0;
+            font-size: 1.5rem;
+            position: absolute;
+
+            right: 10vw;
+            bottom: 0;
+        }
+
+        a {
+            display: flex;
+            span {
+                display: flex;
+                align-items: center;
+                margin-left: 0.5rem;
+            }
         }
     }
 
