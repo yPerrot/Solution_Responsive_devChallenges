@@ -254,65 +254,65 @@ header nav > a {
 /* #endregion */
 /* === Main === */
 /* #region */
-.presentation {
+#home {
   margin-bottom: 6.25rem;
 }
 
-.presentation > span, .presentation > h2, .presentation > div {
+#home > span, #home > h2, #home > div {
   margin-left: 2.5rem;
   max-width: 75vw;
 }
 
 @media screen and (min-width: 1024px) {
-  .presentation > span, .presentation > h2, .presentation > div {
+  #home > span, #home > h2, #home > div {
     margin-left: 18vw;
     width: 35rem;
   }
 }
 
-.presentation span {
+#home span {
   font-weight: 500;
   font-size: 0.75rem;
   color: var(--blue);
 }
 
 @media screen and (min-width: 1024px) {
-  .presentation span {
+  #home span {
     font-size: 1.125rem;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .presentation .card {
+  #home .card {
     max-width: 23rem;
   }
 }
 
-.presentation .card__text {
+#home .card__text {
   font-size: 0.75rem;
   max-width: 37.5rem;
   margin: 2rem 0;
 }
 
 @media screen and (min-width: 1024px) {
-  .presentation .card__text {
+  #home .card__text {
     font-size: 1.125rem;
   }
 }
 
-.presentation .card .form__header {
+#home .card .form__header {
   font-size: 0.625rem;
   color: var(--gray-3);
   margin-bottom: 0.5rem;
 }
 
 @media screen and (min-width: 1024px) {
-  .presentation .card .form__header {
+  #home .card .form__header {
     font-size: 0.875rem;
   }
 }
 
-.presentation .card form {
+#home .card form {
   height: 3rem;
   width: 100%;
   max-width: 20rem;
@@ -320,14 +320,14 @@ header nav > a {
 }
 
 @media screen and (min-width: 1024px) {
-  .presentation .card form {
+  #home .card form {
     height: 3.5rem;
     width: 100%;
     font-size: 1.125rem;
   }
 }
 
-.presentation img {
+#home img {
   display: block;
   margin: 1rem auto;
   width: 95vw;
@@ -335,23 +335,23 @@ header nav > a {
 }
 
 @media screen and (min-width: 1024px) {
-  .offer {
+  #services {
     padding: 0 10vw;
   }
 }
 
-.offer h3 {
+#services h3 {
   margin-left: 2.5rem;
 }
 
 @media screen and (min-width: 1024px) {
-  .offer h3 {
+  #services h3 {
     margin-left: 0;
     max-width: 20rem;
   }
 }
 
-.offer .offer__cards {
+#services .offer__cards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -365,7 +365,7 @@ header nav > a {
 }
 
 @media screen and (min-width: 1024px) {
-  .offer .offer__cards {
+  #services .offer__cards {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -374,13 +374,13 @@ header nav > a {
   }
 }
 
-.offer .offer__cards .offer__card {
+#services .offer__cards .offer__card {
   margin-top: 3rem;
   padding: 3rem 2rem 2.5rem 2rem;
   width: 90vw;
 }
 
-.offer .offer__cards .offer__card .material-icons {
+#services .offer__cards .offer__card .material-icons {
   color: white;
   font-size: 1.75rem;
   padding: 1rem;
@@ -388,31 +388,31 @@ header nav > a {
   margin-bottom: 2.125rem;
 }
 
-.offer .offer__cards .offer__card__edit {
+#services .offer__cards .offer__card__edit {
   background-color: var(--blue);
 }
 
-.offer .offer__cards .offer__card__code {
+#services .offer__cards .offer__card__code {
   background-color: var(--green);
 }
 
-.offer .offer__cards .offer__card__storage {
+#services .offer__cards .offer__card__storage {
   background-color: var(--red);
 }
 
-.offer .offer__cards .offer__card h4 {
+#services .offer__cards .offer__card h4 {
   color: var(--gray-1);
   font-weight: 700;
   font-size: 1.5rem;
   margin-bottom: 1.5rem;
 }
 
-.offer .offer__cards .offer__card p {
+#services .offer__cards .offer__card p {
   color: var(--gray-2);
   margin-bottom: 2rem;
 }
 
-.offer .offer__cards .offer__card button {
+#services .offer__cards .offer__card button {
   border: none;
   outline: none;
   color: var(--gray-3);
@@ -423,14 +423,14 @@ header nav > a {
   border-radius: 12px;
 }
 
-.offer .offer__cards .offer__card:hover {
+#services .offer__cards .offer__card:hover {
   cursor: pointer;
   -webkit-box-shadow: 0px 10px 30px rgba(51, 51, 51, 0.1);
           box-shadow: 0px 10px 30px rgba(51, 51, 51, 0.1);
   border-radius: 24px;
 }
 
-.offer .offer__cards .offer__card:hover button {
+#services .offer__cards .offer__card:hover button {
   color: white;
   background-color: var(--blue);
   cursor: pointer;

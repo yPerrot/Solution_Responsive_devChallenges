@@ -238,7 +238,7 @@ header {
 /* === Main === */
 /* #region */
 
-.presentation {
+#home {
 
     margin-bottom: 6.25rem;
 
@@ -309,7 +309,7 @@ header {
     }
 }
 
-.offer {
+#services {
 
     @media screen and (min-width:1024px) {
         padding: 0 10vw;
