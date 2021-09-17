@@ -547,7 +547,7 @@ section {
   margin-left: 0.5rem;
 }
 
-#clients {
+#team {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -559,7 +559,7 @@ section {
 }
 
 @media screen and (min-width: 1024px) {
-  #clients {
+  #team {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -574,34 +574,34 @@ section {
   }
 }
 
-#clients .clients__text {
+#team .team__text {
   margin-bottom: 1.5rem;
 }
 
 @media screen and (min-width: 1024px) {
-  #clients .clients__text {
+  #team .team__text {
     margin: 0;
     width: 25%;
   }
 }
 
-#clients .clients__text span {
+#team .team__text span {
   color: var(--red);
   font-size: 1.125rem;
 }
 
-#clients .clients__text h2 {
+#team .team__text h2 {
   font-size: 2.25rem;
   line-height: 3.375rem;
 }
 
-#clients .clients__text p {
+#team .team__text p {
   font-size: 1rem;
   color: var(--gray-2);
   max-width: 80%;
 }
 
-#clients .clients__images {
+#team .team__images {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 50% 1fr;
@@ -616,23 +616,23 @@ section {
 }
 
 @media screen and (min-width: 1024px) {
-  #clients .clients__images {
+  #team .team__images {
     width: 50%;
   }
 }
 
-#clients .clients__images img {
+#team .team__images img {
   width: 100%;
   border-radius: 24px;
 }
 
-#clients .clients__images img:first-child {
+#team .team__images img:first-child {
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
   grid-row: 1 / 3;
 }
 
-#clients .clients__images img:nth-child(2) {
+#team .team__images img:nth-child(2) {
   width: 90%;
 }
 

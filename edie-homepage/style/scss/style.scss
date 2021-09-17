@@ -501,7 +501,7 @@ section {
 
 }
 
-#clients {
+#team {
     display: flex;
     flex-direction: column;
 
@@ -515,7 +515,7 @@ section {
         justify-content: space-between;
     }
     
-    .clients__text {
+    .team__text {
         
         margin-bottom: 1.5rem;
         
@@ -542,7 +542,7 @@ section {
         
     }
 
-    .clients__images {
+    .team__images {
         display: grid;
         grid-template-columns: 50% 1fr;
         grid-template-rows: 1fr 1fr;
