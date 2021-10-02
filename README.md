@@ -19,9 +19,9 @@ Done:
  - [Recipe page](https://yperrot.github.io/Solution_Responsive_devChallenges/recipe-page/)
  - [My Gallery](https://yperrot.github.io/Solution_Responsive_devChallenges/my-gallery/)
  - [Checkout Page](https://yperrot.github.io/Solution_Responsive_devChallenges/checkout-page/)
+ - [Edie homepage](https://yperrot.github.io/Solution_Responsive_devChallenges/edie-homepage/)
 
 To-Do:
- - Edie homepage
  - Portfolio
 
 ## Technologies 
