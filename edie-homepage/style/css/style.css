@@ -636,6 +636,59 @@ section {
   width: 90%;
 }
 
+#clients {
+  padding: 0 3vw;
+}
+
+@media screen and (min-width: 1024px) {
+  #clients {
+    padding: 0 10vw;
+  }
+}
+
+#clients > p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--gray-1);
+  margin-bottom: 1.125rem;
+}
+
+@media screen and (min-width: 1024px) {
+  #clients > p {
+    margin-bottom: 2.25rem;
+    font-size: 2.25rem;
+  }
+}
+
+#clients .client {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 2rem;
+}
+
+#clients .client img {
+  width: 5rem;
+  border-radius: 12px;
+}
+
+#clients .client__profil__name {
+  color: var(--gray-1);
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+#clients .client__profil__company {
+  color: var(--gray-3);
+  font-weight: 500;
+  font-size: 1.125rem;
+}
+
 /* #endregion */
 /* === Footer === */
 /* #region */
