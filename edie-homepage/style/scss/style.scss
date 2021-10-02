@@ -582,10 +582,12 @@ section {
         font-weight: 500;
         color: var(--gray-1);
         
+        
         margin-bottom: 1.125rem;
         @media screen and (min-width:1024px) {
             margin-bottom: 2.25rem;
             font-size: 2.25rem;
+            max-width: 60vw;
         }
     
     }
