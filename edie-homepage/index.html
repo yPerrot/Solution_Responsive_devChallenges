@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/devchallenges.png" />
+  <title>Edie Homepage</title>
+  <link rel="stylesheet" href="./style/CSS/style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <input id="check" class="check" type="checkbox" />
+    <span>Edie</span>
+    <div class="ham-icon-container">
+      <div class="ham-icon"></div>
+    </div>
+    <nav class="ham-list">
+      <a href="#home" onclick="hidePanel()">Home</a>
+      <a href="#services" onclick="hidePanel()">Services</a>
+      <a href="#works" onclick="hidePanel()">Our Works</a>
+      <a href="#clients" onclick="hidePanel()">Clients</a>
+      <a href="#contact" onclick="hidePanel()">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home">
+      <span>Unhappy with your website?</span>
+      <h2>We create beautiful and fast web services</h2>
+      
+      <img src="images/heroImage.jpg" alt="">
+      
+      <div class="card">
+        <h2>Story, emotion and purpose</h2>
+        <p class="card__text">We help transform your ideas into real world applications that will outperform your toughest competition and help you achieve your strategic goals in short period of time.</p>
+        
+        <p class="form__header">Want us to contact you?</p>
+        <form onsubmit="return sendMail();">
+          <input type="text" placeholder="Email" id="email">
+          <button>Join</button>
+        </form>
+      </div>
+
+    </section>
+
+    <section id="services">
+      <h3>We offer high demand services</h3>
+
+      <div class="offer__cards">
+
+        <div class="offer__card">
+          <span class="material-icons offer__card__edit">edit</span>
+          <h4>UI/UX Design</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.</p>
+          <button>Get started</button>
+        </div>
+        
+        <div class="offer__card">
+          <span class="material-icons offer__card__code">code</span>
+          <h4>Front End</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.</p>
+          <button>Get started</button>
+        </div>
+        
+        <div class="offer__card">
+          <span class="material-icons offer__card__storage">storage</span>
+          <h4>Back End</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.</p>
+          <button>Get started</button>
+        </div>
+
+      </div>
+
+
+    </section>
+
+    <section id="works">
+      <h3>Good design means good business</h3>
+
+      <div class="works__grid">
+
+        <div class="works__grid__card">
+          <img src="images/smarthome.jpg" alt="Smarthome home dashboard">
+          <p>Full stack application</p>
+          <h4>Smart home dashboard</h4>
+        </div>
+
+        <div class="works__grid__card">
+          <img src="images/onboard.png" alt="On board">
+          <p>UX/UI design</p>
+          <h4>Onboard application</h4>
+        </div>
+
+        <div class="works__grid__card">
+          <img src="images/booking.png" alt="Booking">
+          <p>Mobile application</p>
+          <h4>Booking system</h4>
+        </div>
+
+        <div class="works__grid__card">
+          <img src="images/juice-product.png" alt="Juice product">
+          <p>Front End applicati on</p>
+          <h4>Juice product homepage</h4>
+        </div>
+
+      </div>
+
+      <div class="works__link">
+        <p><a href="#" target="_blank">see more <span class="material-icons">arrow_right_alt</span></a></p>
+      </div>
+
+    </section>
+
+    <section id="team">
+      <div class="team__text">
+        <span>Meet the team</span>
+        <h2>We are chilled and a laidback team</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div class="team__images">
+        <img src="images/person3.png" alt="Woman picutre">
+        <img src="images/person1.png" alt="First man picutre">
+        <img src="images/person2.png" alt="Second man picture">
+      </div>
+
+    </section>
+
+    <section id="clients">
+      <p>“Fast and outstanding resutls. Edie understands their customer’s needs. They have a young and talented team.”</p>
+      <div class="client">
+        <img src="images/person4.png" alt="Client picture">
+        <div class="client__profil">
+          <p class="client__profil__name">Carlos Tran</p>
+          <p class="client__profil__company">The Decorate Gatsby</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="contact">
+
+    <div class="footer__links">
+
+      <div class="footer__links__internal">
+        <!-- style="list-style-type: none;" -->
+        <ul>
+          <li><a href="#home" onclick="hidePanel()">Home</a></li>
+          <li><a href="#services" onclick="hidePanel()">Services</a></li>
+          <li><a href="#works" onclick="hidePanel()">Our Works</a></li>
+          <li><a href="#clients" onclick="hidePanel()">Clients</a></li>
+          <li><a href="#contact" onclick="hidePanel()">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__links__external">
+        <p>Edie</p>
+        <div>
+          <img src="images/instagram.svg" alt="Instagram logo">
+          <img src="images/linkedin.svg" alt="LinkedIn logo">
+          <img src="images/twitter.svg" alt="Twitter logo">
+        </div>
+      </div>
+
+      <div class="footer__links__contact">
+        <p>Want us to contact you?</p>
+        <form onsubmit="return sendMail();">
+          <input type="text" placeholder="Email" id="email_footer">
+          <button>Join</button>
+        </form>
+      </div>
+
+    </div>
+    
+    <div class="footer__signature">
+      <p>
+        created by <a href="https://devchallenges.io/portfolio/yPerrot">yPerrot</a> - devChallenges.io
+      </p>
+    </div>
+  </footer>
+
+<script>
+
+const checkbox = document.getElementById('check')
+
+checkbox.addEventListener('change', (event) => {
+  if (event.currentTarget.checked) {
+    document.body.style.overflow = "hidden"
+  } else {
+    document.body.style.overflow = "auto"
+  }
+})
+
+function hidePanel() {
+  if(checkbox.checked) {
+    checkbox.checked = false
+    document.body.style.overflow = "auto"
+  } 
+}
+
+function sendMail() {
+  document.getElementById("email").value = "";
+  document.getElementById("email_footer").value = "";
+  return false;
+}
+    
+</script>
+
+</body>
+</html>
