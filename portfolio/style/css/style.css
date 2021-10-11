@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap");
 *,
 *::before,
 *::after {
@@ -7,7 +7,12 @@
 }
 
 :root {
-  --background: #F2F2F2;
+  --clr-background: #F2F2F2;
+  --clr-gray-1: #333333;
+  --clr-gray-2: #4F4F4F;
+  --clr-gray-3: #828282;
+  --clr-gray-4: #C4C4C4;
+  --clr-blue: #2F80ED;
   --main-font: 'Montserrat', sans-serif;
 }
 
@@ -17,10 +22,15 @@ body {
 }
 
 body {
-  background-color: var(--background);
-  height: 100%;
-  min-height: 100vh;
+  background-color: var(--clr-background);
   font-family: var(--main-font);
+  padding: 5rem 15vw;
+}
+
+@media screen and (max-width: 1023px) {
+  body {
+    padding: 0;
+  }
 }
 
 .mobile-disclaimer {
@@ -53,9 +63,91 @@ body {
   font-size: 1.25rem;
 }
 
+.card {
+  background: white;
+  -webkit-box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.12);
+  border-radius: 12px;
+}
+
+header {
+  color: var(--clr-gray-3);
+  font-weight: 500;
+  font-size: 1.125rem;
+  padding: 1.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 2rem;
+}
+
 @media screen and (max-width: 1023px) {
-  main {
+  header {
     display: none;
   }
+}
+
+header p {
+  margin: 0;
+}
+
+header img {
+  width: 15rem;
+  aspect-ratio: 1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 12px;
+}
+
+header .content {
+  width: 100%;
+}
+
+header .content__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+header .content__header * > p:first-child {
+  margin-bottom: 0.5rem;
+}
+
+header .content__header__description .name {
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: var(--clr-gray-2);
+}
+
+header .content__header__contact {
+  color: var(--clr-gray-2);
+}
+
+header .content__header__contact span {
+  vertical-align: middle;
+  margin-right: 0.5rem;
+}
+
+header .presentation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
 }
 /*# sourceMappingURL=style.css.map */
