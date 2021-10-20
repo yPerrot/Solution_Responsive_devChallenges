@@ -161,6 +161,14 @@ header .presentation {
 
 .container aside {
   width: 35%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2.5rem;
 }
 
 .container main {
@@ -216,5 +224,66 @@ header .presentation {
   background-color: var(--clr-blue);
   border-radius: 12px;
   height: 8px;
+}
+
+.experiences {
+  padding: 1.5rem;
+}
+
+.experiences > p {
+  color: var(--clr-gray-2);
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.125rem;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.experiences__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2.5rem;
+  width: 100%;
+}
+
+.experiences__content__job {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+}
+
+.experiences__content__job img {
+  width: 64px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-top: 1rem;
+}
+
+.experiences__content__job .job__dates {
+  font-weight: 500;
+  color: var(--clr-gray-2);
+  font-size: 0.875;
+  margin-bottom: 0.5rem;
+}
+
+.experiences__content__job .job__title {
+  font-weight: 600;
+  color: var(--clr-gray-1);
+  margin-bottom: 1.5rem;
+}
+
+.experiences__content__job .job__description {
+  font-weight: 500;
+  color: var(--clr-gray-3);
+  margin: 0;
 }
 /*# sourceMappingURL=style.css.map */

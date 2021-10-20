@@ -83,7 +83,7 @@ $ npm start
 
 - [Steps to replicate a design with only HTML and CSS](https://devchallenges-blogs.web.app/how-to-replicate-design/)
 - [Node.js](https://nodejs.org/)
-- [Marked - a markdown parser](https://github.com/chjj/marked)
+- [Image fit: object-fit](https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit)
 
 ## Contact
 

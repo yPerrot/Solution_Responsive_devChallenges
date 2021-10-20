@@ -152,6 +152,10 @@ header {
 
     aside {
         width: 35%;
+
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
     }
     
     main {
@@ -214,4 +218,64 @@ header {
         }
     }
 
+}
+
+.experiences {
+    padding: 1.5rem;
+
+    & > p {
+        color: var(--clr-gray-2);
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 1.125rem;
+
+        margin: 0;
+        margin-bottom: 1rem;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+        width: 100%;
+
+        &__job {
+            width: 100%;
+            display: flex;
+
+            gap: 1rem;
+
+            img {
+                width: 64px;
+                object-fit: contain;
+                align-self: flex-start;
+
+                margin-top: 1rem;
+            }
+
+            .job {
+                &__dates {
+                    font-weight: 500;
+                    color: var(--clr-gray-2);
+                    font-size: 0.875;
+
+                    margin-bottom: 0.5rem;
+                }
+
+                &__title {
+                    font-weight: 600;
+                    color: var(--clr-gray-1);
+
+                    margin-bottom: 1.5rem;
+                }
+
+                &__description {
+                    font-weight: 500;
+                    color: var(--clr-gray-3);
+
+                    margin: 0;
+                }
+            }
+        }
+    }
 }
