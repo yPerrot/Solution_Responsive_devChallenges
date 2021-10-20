@@ -70,6 +70,8 @@ body {
 
 header {
     
+    width: 100%;
+
     // Default text style
     color: var(--clr-gray-3);
     font-weight: 500;
@@ -141,4 +143,75 @@ header {
 
         gap: 1rem;
     }
+}
+
+.container {
+
+    display: flex;
+    padding-top: 1.5rem;
+
+    aside {
+        width: 35%;
+    }
+    
+    main {
+        width: 63%;
+        margin-left: auto;
+        & > * {
+            padding: 1rem; // FIXME:
+        }
+    }
+}
+
+.skills {
+    padding: 1.5rem;
+    padding-bottom: 0.25rem;
+
+    p {
+        color: var(--clr-gray-2);
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 1.125rem;
+
+        margin: 0;
+    }
+
+    table {
+        border-collapse: separate;
+        border-spacing: 0 1em;
+
+        width: 100%;
+        
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        tr > td:first-child {
+            min-width: 35%;
+            color: var(--clr-gray-2);
+            font-size: 1rem;
+            font-weight: 500;
+        }
+    }
+    
+    .progress_bar {
+        position: relative;
+    
+        width: 100%;
+        height: 8px;
+    
+        border-radius: 12px;
+    
+        background-color: var(--clr-gray-4);
+        
+        .progress {
+            position: relative;
+            background-color: var(--clr-blue);
+            
+            border-radius: 12px;
+            height: 8px;
+        }
+    }
+
 }
