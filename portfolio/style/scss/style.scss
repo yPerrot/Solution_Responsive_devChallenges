@@ -35,6 +35,11 @@ body {
     }
 }
 
+button {
+    all: unset;
+    cursor: pointer;
+}
+
 .mobile-disclaimer {
 
     height: 100vh;
@@ -279,3 +284,32 @@ header {
         }
     }
 }
+
+.project-selector {
+    p {
+        margin: 0;
+        margin-bottom: 1rem;
+
+        font-weight: 500;
+        font-size: 1.125rem;
+        color: var(--clr-gray-2);
+    }
+
+    // TODO: Scroll bar on x axis for type buttons
+
+    button {
+        font-weight: 500;
+        font-size: 0.875rem;
+        color: var(--clr-gray-2);
+        padding: 0.5rem 1rem;
+        border: solid 1px var(--clr-gray-2);
+        border-radius: 12px;
+    }
+    
+    button[data-state='on'] {
+        color: white;
+        background-color: var(--clr-blue);
+        border-color: var(--clr-blue);
+    }
+}
+

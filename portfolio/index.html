@@ -108,12 +108,57 @@
     </aside>
   
     <main>
-      <article class="card">My article</article>
+      <div class="card project-selector">
+        <p>Projects (<span id="nb-project">1</span>)</p>
+        <div>
+          <button class="techno" data-techno="html" data-state="off">HTML</button>
+          <button class="techno" data-techno="css" data-state="off">CSS</button>
+          <button class="techno" data-techno="scss" data-state="off">SCSS</button>
+          <button class="techno" data-techno="reactjs" data-state="off">ReactJS</button>
+        </div>
+      </div>
     </main>
 
   </div>
 
+<script>
 
+const nbProject = document.querySelector("#nb-project");
+nbProject.textContent = "10";
+
+const technos = document.querySelectorAll(".techno");
+let selectedTechno = [];
+
+technos.forEach( e => {
+
+  const changeState = function () {
+    let state = this.dataset.state;
+    if (state === 'off') {
+      // Change state from 'off' to 'on'
+      selectedTechno.push(this.dataset.techno);
+      this.dataset.state = 'on';
+    } else {
+      selectedTechno = arrayRemove(selectedTechno, this.dataset.techno);
+      this.dataset.state = 'off';
+    }
+
+    console.log(this.dataset);
+    console.log(selectedTechno);
+    
+  }
+  changeState.bind(this);
+
+  e.onclick = changeState;
+
+});
+
+
+function arrayRemove(arr, value) {   
+  return arr.filter(function(ele){ 
+      return ele != value; 
+  });
+}
+</script>
 
 </body>
 </html>
