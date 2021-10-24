@@ -1,9 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
 
-*, 
-*::before,
-*::after {
-    box-sizing: border-box;
+@mixin blue-btn {
+    font-weight: 500;
+    font-size: 0.875rem;
+    color: white;
+    background-color: var(--clr-blue);
+    border: solid 1px var(--clr-blue);
+    border-radius: 12px;
+}
+
+@mixin white-btn {
+    font-weight: 500;
+    font-size: 0.875rem;
+    color: var(--clr-gray-2);
+    border: solid 1px var(--clr-gray-2);
+    border-radius: 12px;
 }
 
 :root {
@@ -19,10 +30,9 @@
     --main-font: 'Montserrat', sans-serif;
 }
 
-html, 
-body {
-    margin: 0;
-}
+/*
+
+ */
 
 body {
     background-color: var(--clr-background);
@@ -33,11 +43,6 @@ body {
     @media screen and (max-width:1023px) {
         padding: 0;
     }
-}
-
-button {
-    all: unset;
-    cursor: pointer;
 }
 
 .mobile-disclaimer {
@@ -88,7 +93,6 @@ header {
 
     gap: 2rem;
 
-
     @media screen and (max-width:1023px) {
         display: none;
     }
@@ -130,7 +134,6 @@ header {
             }
 
             &__contact {
-                // text-align: right;
                 color: var(--clr-gray-2);
 
                 span {
@@ -166,9 +169,6 @@ header {
     main {
         width: 63%;
         margin-left: auto;
-        & > * {
-            padding: 1rem; // FIXME:
-        }
     }
 }
 
@@ -288,6 +288,7 @@ header {
 .project-selector {
 
     margin-bottom: 1rem;
+    padding: 1rem;
 
     p {
         margin: 0;
@@ -301,18 +302,12 @@ header {
     // TODO: Scroll bar on x axis for type buttons
 
     button {
-        font-weight: 500;
-        font-size: 0.875rem;
-        color: var(--clr-gray-2);
+        @include white-btn();
         padding: 0.5rem 1rem;
-        border: solid 1px var(--clr-gray-2);
-        border-radius: 12px;
     }
     
     button[data-state='on'] {
-        color: white;
-        background-color: var(--clr-blue);
-        border-color: var(--clr-blue);
+        @include blue-btn();
     }
 }
 
@@ -364,37 +359,24 @@ header {
 
             font-weight: 500;
             color: var(--clr-gray-3);
-
         }
 
         &__btns {
             margin-top: auto;
+            
+            font-size: 1.5rem;
 
-            a {
-                text-decoration: none;
-                color: inherit;
+            .project-btn-demo {
+                @include blue-btn();
+                padding: 1rem 2.5rem;
+                margin-right: 0.5rem;
             }
+            
+            .project-btn-code {
+                @include white-btn();
+                padding: 1rem 2.5rem;
+            }
+
         }
     }
-}
-
-.project-btn-demo {
-    font-weight: 500;
-    font-size: 0.875rem;
-    color: var(--clr-gray-2);
-    padding: 0.5rem 1rem;
-    border: solid 1px var(--clr-gray-2);
-    border-radius: 12px;
-
-    margin-right: 0.5rem;
-}
-
-.project-btn-code {
-    font-weight: 500;
-    font-size: 0.875rem;
-    color: white;
-    padding: 0.5rem 1rem;
-    background-color: var(--clr-blue);
-    border: solid 1px var(--clr-blue);
-    border-radius: 12px;
 }

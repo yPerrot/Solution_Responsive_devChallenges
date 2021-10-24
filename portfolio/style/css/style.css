@@ -1,11 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap");
-*,
-*::before,
-*::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
 :root {
   --clr-background: #F2F2F2;
   --clr-gray-1: #333333;
@@ -16,11 +9,9 @@
   --main-font: 'Montserrat', sans-serif;
 }
 
-html,
-body {
-  margin: 0;
-}
+/*
 
+ */
 body {
   background-color: var(--clr-background);
   font-family: var(--main-font);
@@ -31,11 +22,6 @@ body {
   body {
     padding: 0;
   }
-}
-
-button {
-  all: unset;
-  cursor: pointer;
 }
 
 .mobile-disclaimer {
@@ -181,10 +167,6 @@ header .presentation {
   margin-left: auto;
 }
 
-.container main > * {
-  padding: 1rem;
-}
-
 .skills {
   padding: 1.5rem;
   padding-bottom: 0.25rem;
@@ -294,6 +276,7 @@ header .presentation {
 
 .project-selector {
   margin-bottom: 1rem;
+  padding: 1rem;
 }
 
 .project-selector p {
@@ -308,15 +291,18 @@ header .presentation {
   font-weight: 500;
   font-size: 0.875rem;
   color: var(--clr-gray-2);
-  padding: 0.5rem 1rem;
   border: solid 1px var(--clr-gray-2);
   border-radius: 12px;
+  padding: 0.5rem 1rem;
 }
 
 .project-selector button[data-state='on'] {
+  font-weight: 500;
+  font-size: 0.875rem;
   color: white;
   background-color: var(--clr-blue);
-  border-color: var(--clr-blue);
+  border: solid 1px var(--clr-blue);
+  border-radius: 12px;
 }
 
 .project + .project {
@@ -375,30 +361,26 @@ header .presentation {
 
 .project__content__btns {
   margin-top: auto;
+  font-size: 1.5rem;
 }
 
-.project__content__btns a {
-  text-decoration: none;
-  color: inherit;
-}
-
-.project-btn-demo {
-  font-weight: 500;
-  font-size: 0.875rem;
-  color: var(--clr-gray-2);
-  padding: 0.5rem 1rem;
-  border: solid 1px var(--clr-gray-2);
-  border-radius: 12px;
-  margin-right: 0.5rem;
-}
-
-.project-btn-code {
+.project__content__btns .project-btn-demo {
   font-weight: 500;
   font-size: 0.875rem;
   color: white;
-  padding: 0.5rem 1rem;
   background-color: var(--clr-blue);
   border: solid 1px var(--clr-blue);
   border-radius: 12px;
+  padding: 1rem 2.5rem;
+  margin-right: 0.5rem;
+}
+
+.project__content__btns .project-btn-code {
+  font-weight: 500;
+  font-size: 0.875rem;
+  color: var(--clr-gray-2);
+  border: solid 1px var(--clr-gray-2);
+  border-radius: 12px;
+  padding: 1rem 2.5rem;
 }
 /*# sourceMappingURL=style.css.map */
