@@ -45,9 +45,9 @@ function Get(yourUrl){
 function loadProjects(selectedTechno = []) {
     const main = document.querySelector('main');
 
-    const json_obj = JSON.parse(Get("./projects.json"));
+    const data = JSON.parse(Get("./data.json"));
 
-    json_obj.projects.forEach(e => {
+    data.projects.forEach(e => {
 
         const doPrint = selectedTechno.every( tag => {
             return e.tags.includes(tag);
