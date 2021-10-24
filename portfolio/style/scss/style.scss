@@ -286,6 +286,9 @@ header {
 }
 
 .project-selector {
+
+    margin-bottom: 1rem;
+
     p {
         margin: 0;
         margin-bottom: 1rem;
@@ -313,3 +316,85 @@ header {
     }
 }
 
+.project + .project {
+    margin-top: 2rem;
+}
+
+.project {
+    padding: 1rem;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 4fr 6fr;
+
+    height: 18rem;
+
+    & > img {
+        width: 100%;
+        max-height: 100%;
+
+        align-self: center;
+        
+        // object-fit: scale-down;
+        // object-fit: cover;
+        
+        border-radius: 12px;
+
+        box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.3);
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+
+        .project-tag {
+            font-weight: 500;
+            color: var(--clr-gray-2);
+            margin-right: 0.25rem;
+        }
+
+        &__name {
+            font-weight: 500;
+            font-size: 1.5rem;
+            color: var(--clr-gray-1);
+        }
+
+        &__description {
+            margin: 0;
+            margin-bottom: 1rem;
+
+            font-weight: 500;
+            color: var(--clr-gray-3);
+
+        }
+
+        &__btns {
+            margin-top: auto;
+
+            a {
+                text-decoration: none;
+                color: inherit;
+            }
+        }
+    }
+}
+
+.project-btn-demo {
+    font-weight: 500;
+    font-size: 0.875rem;
+    color: var(--clr-gray-2);
+    padding: 0.5rem 1rem;
+    border: solid 1px var(--clr-gray-2);
+    border-radius: 12px;
+
+    margin-right: 0.5rem;
+}
+
+.project-btn-code {
+    font-weight: 500;
+    font-size: 0.875rem;
+    color: white;
+    padding: 0.5rem 1rem;
+    background-color: var(--clr-blue);
+    border: solid 1px var(--clr-blue);
+    border-radius: 12px;
+}

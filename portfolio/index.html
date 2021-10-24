@@ -9,6 +9,9 @@
   <link rel="stylesheet" href="style/css/style.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="shortcut icon" href="assets/devchallenges.png" type="image/x-icon">
+
+  <script src="./index.js"></script>
+
 </head>
 <body>
 
@@ -111,54 +114,34 @@
       <div class="card project-selector">
         <p>Projects (<span id="nb-project">1</span>)</p>
         <div>
-          <button class="techno" data-techno="html" data-state="off">HTML</button>
-          <button class="techno" data-techno="css" data-state="off">CSS</button>
-          <button class="techno" data-techno="scss" data-state="off">SCSS</button>
-          <button class="techno" data-techno="reactjs" data-state="off">ReactJS</button>
+          <button class="techno" data-techno="HTML" data-state="off">HTML</button>
+          <button class="techno" data-techno="CSS" data-state="off">CSS</button>
+          <button class="techno" data-techno="SCSS" data-state="off">SCSS</button>
+          <button class="techno" data-techno="JavaScript" data-state="off">JavaScript</button>
+          <button class="techno" data-techno="ReactJS" data-state="off">ReactJS</button>
         </div>
       </div>
+
+      <!-- <article class="project card">
+        <img src="./assets/image/404_page_challenge.png" alt="Desktop version of 404 not found challenge">
+        <div class="project__content">
+          <div class="project__content__tags">
+            <span class="project-tag">#HTML</span>
+            <span class="project-tag">#CSS</span>
+            <span class="project-tag">#responsive</span>
+          </div>
+          <p class="project__content__name">404 Not Found</p>
+          <p class="project__content__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt veniam at aliquam! Cumque eveniet similique debitis officiis, excepturi iure aperiam?</p>
+          <div class="project__content__btns">
+            <button class="project-btn-demo">Demo</button>
+            <button class="project-btn-code">Code</button>
+          </div>
+        </div>
+      </article> -->
+
     </main>
 
   </div>
-
-<script>
-
-const nbProject = document.querySelector("#nb-project");
-nbProject.textContent = "10";
-
-const technos = document.querySelectorAll(".techno");
-let selectedTechno = [];
-
-technos.forEach( e => {
-
-  const changeState = function () {
-    let state = this.dataset.state;
-    if (state === 'off') {
-      // Change state from 'off' to 'on'
-      selectedTechno.push(this.dataset.techno);
-      this.dataset.state = 'on';
-    } else {
-      selectedTechno = arrayRemove(selectedTechno, this.dataset.techno);
-      this.dataset.state = 'off';
-    }
-
-    console.log(this.dataset);
-    console.log(selectedTechno);
-    
-  }
-  changeState.bind(this);
-
-  e.onclick = changeState;
-
-});
-
-
-function arrayRemove(arr, value) {   
-  return arr.filter(function(ele){ 
-      return ele != value; 
-  });
-}
-</script>
 
 </body>
 </html>
