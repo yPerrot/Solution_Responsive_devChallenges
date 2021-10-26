@@ -2,7 +2,7 @@
     "projects" : [
         {
             "name": "404 Not Found", 
-            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt veniam at aliquam! Cumque eveniet similique debitis officiis, excepturi iure aperiam?",
+            "description": "Challange from devChallenge website. </br></br> Challenge: Create a 404 not found page following the design. The page should be responsive. ",
             "picture" : "./assets/image/404_page_challenge.png",
             "tags": ["HTML", "CSS"],
             "demo": "https://yperrot.github.io/Solution_Responsive_devChallenges/404-not-found/",
@@ -11,7 +11,7 @@
 
         {
             "name": "My Team Page", 
-            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt veniam at aliquam! Cumque eveniet similique debitis officiis, excepturi iure aperiam?",
+            "description": "Challange from devChallenge website. </br></br> Challenge: Create my team page following the design. The page should be responsive. ",
             "picture" : "./assets/image/My_Team_page_challenge.png",
             "tags": ["HTML", "CSS"],
             "demo": "https://yperrot.github.io/Solution_Responsive_devChallenges/my-team-page/",
@@ -20,7 +20,7 @@
 
         {
             "name": "Interior Consultant", 
-            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt veniam at aliquam! Cumque eveniet similique debitis officiis, excepturi iure aperiam?",
+            "description": "Challange from devChallenge website. </br></br> Challenge: Create a homepage following the design. The page should be responsive.",
             "picture" : "./assets/image/Interior_Consultant_page_challenge.png",
             "tags": ["HTML", "SCSS", "JavaScript"],
             "demo": "https://yperrot.github.io/Solution_Responsive_devChallenges/interior-consultant/",

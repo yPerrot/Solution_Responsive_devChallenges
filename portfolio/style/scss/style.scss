@@ -30,10 +30,6 @@
     --main-font: 'Montserrat', sans-serif;
 }
 
-/*
-
- */
-
 body {
     background-color: var(--clr-background);
     font-family: var(--main-font);
@@ -136,11 +132,16 @@ header {
             &__contact {
                 color: var(--clr-gray-2);
 
+                text-align: right;
+
                 span {
                     vertical-align: middle;
                     margin-right: 0.5rem;
                 }
 
+                i {
+                    margin-right: 0.5rem;
+                }
             }
         }
     }
@@ -321,7 +322,7 @@ header {
     gap: 2rem;
     grid-template-columns: 4fr 6fr;
 
-    height: 18rem;
+    min-height: 18rem;
 
     & > img {
         width: 100%;

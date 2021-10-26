@@ -9,9 +9,6 @@
   --main-font: 'Montserrat', sans-serif;
 }
 
-/*
-
- */
 body {
   background-color: var(--clr-background);
   font-family: var(--main-font);
@@ -125,10 +122,15 @@ header .content__header__description .name {
 
 header .content__header__contact {
   color: var(--clr-gray-2);
+  text-align: right;
 }
 
 header .content__header__contact span {
   vertical-align: middle;
+  margin-right: 0.5rem;
+}
+
+header .content__header__contact i {
   margin-right: 0.5rem;
 }
 
@@ -316,7 +318,7 @@ header .presentation {
   gap: 2rem;
   -ms-grid-columns: 4fr 6fr;
       grid-template-columns: 4fr 6fr;
-  height: 18rem;
+  min-height: 18rem;
 }
 
 .project > img {

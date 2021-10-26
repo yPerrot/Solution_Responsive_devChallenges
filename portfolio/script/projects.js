@@ -89,5 +89,4 @@ function appendProject(project) {
     article.appendChild(content);
 
     main.appendChild(article);
-
 }
