@@ -2,7 +2,7 @@ import { readJsonFile } from './utils.js'
 
 export async function loadProjects(selectedTechno = []) {
 
-    const data = await readJsonFile('../assets/data.json');
+    const data = await readJsonFile('./assets/data.json');
 
     data.projects.forEach(e => {
         const doPrint = selectedTechno.every( tag => {
