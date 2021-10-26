@@ -20,16 +20,18 @@ Done:
  - [My Gallery](https://yperrot.github.io/Solution_Responsive_devChallenges/my-gallery/)
  - [Checkout Page](https://yperrot.github.io/Solution_Responsive_devChallenges/checkout-page/)
  - [Edie homepage](https://yperrot.github.io/Solution_Responsive_devChallenges/edie-homepage/)
+ - [Portfolio](https://yperrot.github.io/Solution_Responsive_devChallenges/portfolio/)
 
 To-Do:
- - Portfolio
+ - None
 
 ## Technologies 
 
-I planned to use as most as I can SASS and Typescript in order to practice those.  
-But here is the technologies actually used : 
+Here is the technical stacks I used : 
  - HTML
  - CSS
  - SCSS
  - SASS
- - JavaSript
+ - JavaSript 
+ 
+SCSS was a really interesting discovery. The ability to nest the code makes it far more readable and easy to write. The mixin and variable are also nice features, but since CSS include variable natively, they were less impressive. 

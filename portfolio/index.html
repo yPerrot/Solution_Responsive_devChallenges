@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <!-- style -->
+  <link rel="stylesheet" href="./style/css/style.css">
+  <link rel="stylesheet" href="./style/css/normalize.css">
+  <!-- icon -->
+  <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+  <!-- favicon -->
+  <link rel="shortcut icon" href="assets/devchallenges.png" type="image/x-icon">
+  <!-- JavaScript -->
+  <script type="module" src="./script/index.js"></script>
+</head>
+<body>
+
+  <div class="mobile-disclaimer">
+    <div class="mobile-card">
+      <i class="far fa-meh"></i>
+      <p>No Mobile Version provided for the moment</p>
+    </div>
+  </div>
+
+  <header class="card">
+    <img src="assets/image/Profile.jpeg" alt="Profil picture ">
+    <div class="content">
+      <div class="content__header">
+        <div class="content__header__description">
+          <p class="name">Yohan PERROT</p>
+          <p class="title">Full Stack developer</p>
+        </div>
+        <div class="content__header__contact">
+          <p><a href="https://www.linkedin.com/in/yohan-perrot-853149164/"><i class="fab fa-linkedin"></i>Yohan PERROT</a></p>
+          <p><a href="https://github.com/yPerrot"><i class="fab fa-github"></i>yPerrot</a></p>
+        </div>
+      </div>
+      <div class="presentation">
+        <p>
+          Computer engineer passionate about development, I like to learn more and more in order to improve myself and develop new skills.
+        </p>
+        <p>
+          Strongly autonomous, I am able to work by myself on innovative and creative projects.
+        </p>
+      </div>
+    </div>
+  </header>
+  
+  <div class="container">
+
+    <aside>
+
+      <div class="skills card">
+        <p>Front end</p>
+        <table>
+          <tr>
+            <td>HTML</td>
+            <td>
+              <div class="progress_bar">
+                <div class="progress" style="width:60%"></div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>CSS</td>
+            <td>
+              <div class="progress_bar">
+                <div class="progress" style="width:80%"></div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>JavaScript</td>
+            <td>
+              <div class="progress_bar">
+                <div class="progress" style="width:70%"></div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>ReactJS</td>
+            <td>
+              <div class="progress_bar">
+                <div class="progress" style="width:50%"></div>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="card experiences">
+        <p>Experiences</p>
+
+        <div class="experiences__content">
+
+          <div class="experiences__content__job">
+            <img src="./assets/image/3DS_logo.png" alt="Logo Dassault Systemes">
+            <div class="job">
+              <div class="job__dates">Sept 2018 - Sept 2021</div>
+              <div class="job__title">Back-end developper</div>
+              <p class="job__description">Development of plug-ins to allow the processing and display of data from external sources (files, servers) in the SMM application.</p>
+            </div>
+          </div>
+
+          <div class="experiences__content__job">
+            <img src="./assets/image/ID3I_logo.png" alt="Logo ID3I">
+            <div class="job">
+              <div class="job__dates">Apr 2018 - Jun 2018</div>
+              <div class="job__title">Full-stack developper</div>
+              <p class="job__description">Creation of an instant messaging live chat application mockup.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </aside>
+  
+    <main>
+      <div class="card project-selector">
+        <p>Projects (<span id="nb-project">0</span>)</p>
+        <div>
+          <button class="techno" data-techno="HTML" data-state="off">HTML</button>
+          <button class="techno" data-techno="CSS" data-state="off">CSS</button>
+          <button class="techno" data-techno="SCSS" data-state="off">SCSS</button>
+          <button class="techno" data-techno="JavaScript" data-state="off">JavaScript</button>
+          <button class="techno" data-techno="ReactJS" data-state="off">ReactJS</button>
+          <button class="techno" data-techno="VueJS" data-state="off">VueJS</button>
+        </div>
+      </div>
+
+      <!-- <article class="project card">
+        <img src="./assets/image/404_page_challenge.png" alt="Desktop version of 404 not found challenge">
+        <div class="project__content">
+          <div class="project__content__tags">
+            <span class="project-tag">#HTML</span>
+            <span class="project-tag">#CSS</span>
+            <span class="project-tag">#responsive</span>
+          </div>
+          <p class="project__content__name">404 Not Found</p>
+          <p class="project__content__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt veniam at aliquam! Cumque eveniet similique debitis officiis, excepturi iure aperiam?</p>
+          <div class="project__content__btns">
+            <button class="project-btn-demo">Demo</button>
+            <button class="project-btn-code">Code</button>
+          </div>
+        </div>
+      </article> -->
+
+    </main>
+
+  </div>
+
+</body>
+</html>
