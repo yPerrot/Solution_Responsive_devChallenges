@@ -41,34 +41,7 @@ body {
     }
 }
 
-.mobile-disclaimer {
-
-    height: 100vh;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    
-    @media screen and (min-width:1024px) {
-        display: none;
-    }
-    
-    .mobile-card {
-        background-color: white;
-        width: 80vw;
-        padding: 2rem 1rem;
-
-        border-radius: 12px;
-        box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.12);
-        
-        text-align: center;
-
-        font-size: 1.25rem;
-    }
-}
-
-.card {
+.card { // FIXME: Change to mixin ? 
     background: white;
     box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.12);
     border-radius: 12px;
@@ -88,10 +61,6 @@ header {
     flex-direction: row;
 
     gap: 2rem;
-
-    @media screen and (max-width:1023px) {
-        display: none;
-    }
 
     p {
         margin: 0;
@@ -381,3 +350,44 @@ header {
         }
     }
 }
+
+/* #region Mobile Version*/
+
+.mobile-disclaimer {
+
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+    @media screen and (min-width:1024px) {
+        display: none;
+    }
+    
+    .mobile-card {
+        background-color: white;
+        width: 80vw;
+        padding: 2rem 1rem;
+
+        border-radius: 12px;
+        box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.12);
+        
+        text-align: center;
+
+        font-size: 1.25rem;
+    }
+
+    i {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width:1023px) {
+    header, .container {
+        display: none;
+    }
+}
+
+/* #endregion */
